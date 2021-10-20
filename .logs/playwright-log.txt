@@ -1,0 +1,27 @@
+{"level":30,"time":"2021-10-13T18:21:37.085Z","pid":14916,"hostname":"Will","msg":"Listening on 51396"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at Object.exists (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25989:15)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23098:41
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
+    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
+    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at Object.exists (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25989:15)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23098:41
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
+    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
+    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
+=============================================================

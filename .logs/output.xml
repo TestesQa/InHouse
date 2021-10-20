@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211013 15:21:36.024" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\NeerHouse\frontend\tests">
+<suite id="s1-s1" name="Login" source="C:\NeerHouse\frontend\tests\Login.robot">
+<test id="s1-s1-t1" name="Senha incorreta">
+<kw name="Star Session" type="SETUP">
+<msg timestamp="20211013 15:21:37.483" level="FAIL">No keyword with name 'Star Session' found. Did you mean:
+    Base.Start Session</msg>
+<status status="FAIL" starttime="20211013 15:21:37.483" endtime="20211013 15:21:37.483"/>
+</kw>
+<kw name="Finish Session" library="Base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211013 15:21:37.501" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20211013 15:21:37.507" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<status status="FAIL" starttime="20211013 15:21:37.484" endtime="20211013 15:21:37.507"/>
+</kw>
+<status status="FAIL" starttime="20211013 15:21:37.484" endtime="20211013 15:21:37.508">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<tag>inc_pass</tag>
+<status status="FAIL" starttime="20211013 15:21:37.476" endtime="20211013 15:21:37.509">Setup failed:
+No keyword with name 'Star Session' found. Did you mean:
+    Base.Start Session
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<doc>Login Tests</doc>
+<status status="FAIL" starttime="20211013 15:21:36.068" endtime="20211013 15:21:37.516"/>
+</suite>
+<status status="FAIL" starttime="20211013 15:21:36.027" endtime="20211013 15:21:37.526"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">inc_pass</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211013 15:21:37.501" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+</errors>
+</robot>
