@@ -13,7 +13,9 @@ Fazer login
     Fill Text       id=password            12345678
     Click           text=Entrar
 
-    Wait For Elements State         css=li[role="menuitem"]     visible     10      Login error
+    # Wait For Elements State         css=li[role="menuitem"]     visible     10      Login error
+
+    Get Text        text= Dashboard
 
 
         
@@ -29,10 +31,29 @@ Senha incorreta
 
     Get Text        text= Ocorreu um erro, verifique suas credenciais e tente novamente
     
-    #Wait For Elements State                css=.ant-message-custom-content ant-message-error        visible     10
-
+   
 Login em branco
-Senha em branco
+
+    Fill Text       id=email                ${EMPTY}                
+    Fill Text       id=password            123
+    Click           text=Entrar
+
+    Wait For Elements State         css=input[error="email is a required field"]     visible     10    
+
 Ambos em branco
+
+    Fill Text       id=email                ${EMPTY}                
+    Fill Text       id=password             ${EMPTY}
+    Click           text=Entrar
+
+    Wait For Elements State         css=input[error="email is a required field"]        visible     10 
+
+
 Email invalido
-Limite    
+
+    Fill Text       id=email               test@akdjsk.                
+    Fill Text       id=password            123
+    Click           text=Entrar
+
+    Wait For Elements State         css=input[error="email must be a valid email"]     visible     10 
+# Limite    
