@@ -47,6 +47,7 @@ Ambos em branco
     Click           text=Entrar
 
     Wait For Elements State         css=input[error="email is a required field"]        visible     10 
+    Wait For Elements State         css=input[error="password is a required field"]        visible     10 
 
 
 Email invalido
