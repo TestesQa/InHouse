@@ -3,58 +3,39 @@ Documentation       Login Tests
 
 Resource            ${EXECDIR}/resources/Base.robot
 
-Test Setup          Start Session
-Test Teardown       Finish Session
+Suite Setup          Start Session
+Test Teardown       Finish Test
 
 *Test Cases*
+
 Fazer login
-
-    Fill Text       id=email               shopmanager@email.com   
-    Fill Text       id=password            12345678
-    Click           text=Entrar
-
-    # Wait For Elements State         css=li[role="menuitem"]     visible     10      Login error
-
-    Get Text        text= Dashboard
-
-
-        
-
-
+    [Tags]      login
+    Login With      shopmanager@email.com       12345678
+    User Shold Be Logged In
+    [Teardown]      Take ScreenShot And Logout
+     
 Senha incorreta
     [Tags]          pass
  
+    Login With              shopmanager@gmail.com       123
+    Alert Text Shold Be     Ocorreu um erro, verifique suas credenciais e tente novamente
 
-    Fill Text       id=email               shopmanager@email.com   
-    Fill Text       id=password            123
-    Click           text=Entrar
-
-    Get Text        text= Ocorreu um erro, verifique suas credenciais e tente novamente
     
-   
+    
+Email invalido
+
+    Login With  shomanager@ssl  123
+    Alert login Shold Be
+
 Login em branco
 
-    Fill Text       id=email                ${EMPTY}                
-    Fill Text       id=password            123
-    Click           text=Entrar
-
-    Wait For Elements State         css=input[error="email is a required field"]     visible     10    
+    Login With  ${EMPTY}  123
+    Alert login Shold Be Required   
 
 Ambos em branco
 
-    Fill Text       id=email                ${EMPTY}                
-    Fill Text       id=password             ${EMPTY}
-    Click           text=Entrar
+    Login With  ${EMPTY}  ${EMPTY}  
+    Alert login Shold Be Required
+    Alert password Shold Be Required
 
-    Wait For Elements State         css=input[error="email is a required field"]        visible     10 
-    Wait For Elements State         css=input[error="password is a required field"]        visible     10 
-
-
-Email invalido
-
-    Fill Text       id=email               test@akdjsk.                
-    Fill Text       id=password            123
-    Click           text=Entrar
-
-    Wait For Elements State         css=input[error="email must be a valid email"]     visible     10 
 # Limite    
