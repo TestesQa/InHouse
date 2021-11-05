@@ -1,12 +1,29 @@
-{"level":30,"time":"2021-10-29T18:54:14.537Z","pid":4300,"hostname":"Will","msg":"Listening on 58810"}
-{"level":30,"time":"2021-10-29T18:54:16.038Z","pid":4300,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-10-29T18:54:16.081Z","pid":4300,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-10-29T18:54:16.565Z","pid":4300,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-10-29T18:54:16.565Z","pid":4300,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-10-29T18:54:24.701Z","pid":4300,"hostname":"Will","msg":"Retrieved text for element css=.ant-message containing Ocorreu um erro, verifique suas credenciais e tente novamente"}
-{"level":30,"time":"2021-10-29T18:54:26.296Z","pid":4300,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-10-29T18:54:26.296Z","pid":4300,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-10-29T18:54:26.297Z","pid":4300,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-10-29T18:54:26.318Z","pid":4300,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-10-29T18:54:26.318Z","pid":4300,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-10-29T18:54:26.318Z","pid":4300,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-05T20:39:57.417Z","pid":2712,"hostname":"Will","msg":"Listening on 57366"}
+{"level":30,"time":"2021-11-05T20:39:59.094Z","pid":2712,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-05T20:39:59.127Z","pid":2712,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-05T20:40:00.111Z","pid":2712,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-05T20:40:00.111Z","pid":2712,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-05T20:40:13.117Z","pid":2712,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Admin"
+  selector resolved to 5 elements. Proceeding with the first one.
+  selector resolved to hidden <p>Para voltar à visão do admin, feche essa caixa de…</p>
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-05T20:40:24.456Z","pid":2712,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-05T20:40:24.457Z","pid":2712,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-05T20:40:24.458Z","pid":2712,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-05T20:40:24.485Z","pid":2712,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-05T20:40:24.485Z","pid":2712,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-05T20:40:24.485Z","pid":2712,"hostname":"Will","msg":"Changed active page"}
