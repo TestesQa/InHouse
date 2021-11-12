@@ -1,0 +1,61 @@
+{   
+    "Adm1": {
+        "email": "emailteste@teste.com",
+        "permissao" :"Admin"
+    },
+
+    "EmailBranco": {
+        "email": "",
+        "permissao" :"SysAdmin"
+    },
+
+    "Vazio": {
+        "email": "",
+        "permissao": ""
+    },
+
+    "PermissaoBranco":{
+        "email":"email2@email.com",
+        "permissao": ""
+    },
+
+    "EmailInvalido":{
+        "email": "emailinvalido@",
+        "permissao": "Admin"
+    },
+    "CadLojista": {
+        "email":"lojista@email.com",
+        "phone":"43999999999"
+    },
+    "CadLojistaCompleto": {
+        "email":"lojista@email.com",
+        "phone":"43999999999",
+        "name": "Nome Teste",
+        "doc": "06665666987",
+        "banco":"",
+        "agencia":"xxxx",
+        "conta":"0000",
+        "pix":""
+    },
+    "CadLogistaBranco":{
+        "email":"",
+        "phone":""
+    },
+    "CadLogistaEmailInvalid":{
+        "email":"tstes@",
+        "phone":"44988565547"
+    },
+    "CadLogistaPhoneInvalid":{
+        "email":"tstes@gmail.com",
+        "phone":"449885"
+    },
+    "CadLogistaEmailBranco":{
+        "email":"",
+        "phone":"44988565547"
+    },
+    "CadLogistaPhoneBranco":{
+        "email":"tstes@ito.com",
+        "phone":""
+    }
+
+}

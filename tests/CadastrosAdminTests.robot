@@ -1,46 +1,69 @@
 *Settings*
-Documentation    Cadastro Tests
+Documentation    CADASTRO ADMIN TESTS
 
 Resource     ${EXECDIR}/resources/Base.robot
-#Resource    ${EXECDIR}/resources/Cadastro.robot
 
 Suite Setup      Start Session
 Test Teardown    Finish Test
 
 *Test Cases*
 
+Login Admin
+
+    Login Admin
+
 Cadastro admin com sucesso
 
     [Tags]    Cadastro
 
-    Login With                 admin@email.com    12345678
-    User Shold Be Logged In
+    ${DadosCad}    Get DadosCad    Adm1
 
-    Click    text=Usuários
-    Click    text=Criar
+    Go To CadAdmin Form
+    Submit CadastroAdm Form    ${DadosCad}
+    #Should Be Cadastro Is Available
+    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
 
-    Get Text    text="Cadastrar usuário"
+Cadastro admin dados em branco
 
-    Fill Text   id=email    emailteste@teste.com
+    [Tags]    CadBranco
 
-    Click       css=.ant-select-selection-item
-    
+    ${DadosCad}    Get DadosCad    Vazio
 
-    Click       text=Admin
-    Click       text=Salvar
+    Go To CadAdmin Form
+    Submit CadastroAdm Form               ${DadosCad}
+    Alert Email Shold Be
+    Alert Permission Shold Be Required
+    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
 
-    Get Text    text="O administrador emailteste@teste.com foi criado com sucesso"
+Cadastro admin email em branco
 
+    [Tags]    MailBranco
 
+    ${DadosCad}    Get DadosCad    EmailBranco
 
-    
+    Go To CadAdmin Form
+    Submit CadastroAdm Form    ${DadosCad}
+    Alert Email Shold Be
+    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
 
+Cadastro admin permissao em branco
 
+    [Tags]    PermissionBranco
 
+    ${DadosCad}    Get DadosCad    PermissaoBranco
 
+    Go To CadAdmin Form
+    Submit CadastroAdm Form               ${DadosCad}
+    Alert Permission Shold Be Required
+    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
 
+Cadastro admin email invalido
 
+    [Tags]    MailInvalid
 
+    ${DadosCad}    Get DadosCad    EmailInvalido
 
-# Campos em branco
-# Campo invalido
+    Go To CadAdmin Form
+    Submit CadastroAdm Form         ${DadosCad}
+    Alert Invalid Email Shold Be
+    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]

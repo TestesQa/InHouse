@@ -1,14 +1,20 @@
 *Settings*
-Documentation   Arquivo principal do projeto de automação
+Documentation    Arquivo principal do projeto de automação
 
-Library         Browser
+Library     Browser
+#Library    SeleniumLibrary
 
-Resource        actions/Login.robot
-    
+
+Resource    Helpers.robot
+Resource    actions/LoginActions.robot
+Resource    actions/CadAdm.robot
+Resource    actions/CadLojista.robot
+
+
 *Keywords*
 Start Session
-    New Browser     chromium    False
-    New page        https://neer.stag.dev.luby.com.br/
+    New Browser    chromium                              False
+    New page       https://neer.stag.dev.luby.com.br/
 
 Finish Test
     Take ScreenShot
