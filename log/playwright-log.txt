@@ -1,44 +1,32 @@
-{"level":30,"time":"2021-11-12T20:54:30.911Z","pid":12144,"hostname":"Will","msg":"Listening on 62244"}
-{"level":30,"time":"2021-11-12T20:54:32.571Z","pid":12144,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-12T20:54:32.606Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:54:33.049Z","pid":12144,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-12T20:54:33.049Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:54:42.452Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:43.230Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:44.653Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:45.532Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:46.391Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:47.309Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:48.078Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
-{"level":30,"time":"2021-11-12T20:54:48.628Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:54:48.628Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:54:48.629Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:54:48.655Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:54:48.656Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:54:48.656Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:54:49.686Z","pid":12144,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-12T20:54:49.722Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:54:50.305Z","pid":12144,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-12T20:54:50.305Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:55:00.073Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
-{"level":30,"time":"2021-11-12T20:55:01.321Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
-{"level":30,"time":"2021-11-12T20:55:02.426Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
-{"level":30,"time":"2021-11-12T20:55:03.543Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
-{"level":30,"time":"2021-11-12T20:55:04.515Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
-{"level":30,"time":"2021-11-12T20:55:05.216Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:55:05.216Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:55:05.216Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:55:05.244Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:55:05.244Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:55:05.244Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:55:06.458Z","pid":12144,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-12T20:55:06.542Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:55:06.998Z","pid":12144,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-12T20:55:06.998Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:55:17.830Z","pid":12144,"hostname":"Will","msg":"Retrieved text for element css=.ant-message containing Ocorreu um erro, verifique suas credenciais e tente novamente"}
-{"level":30,"time":"2021-11-12T20:55:19.755Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:55:19.755Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:55:19.755Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
-{"level":30,"time":"2021-11-12T20:55:19.783Z","pid":12144,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-12T20:55:19.783Z","pid":12144,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-12T20:55:19.784Z","pid":12144,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-18T22:24:57.907Z","pid":1688,"hostname":"Will","msg":"Listening on 65411"}
+{"level":30,"time":"2021-11-18T22:25:02.202Z","pid":1688,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-18T22:25:02.373Z","pid":1688,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-18T22:25:03.196Z","pid":1688,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-18T22:25:03.196Z","pid":1688,"hostname":"Will","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+=========================== logs ===========================
+navigating to "https://neer.stag.dev.luby.com.br/", waiting until "load"
+============================================================
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26665:49
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26079:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26060:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26051:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at Object.exists (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25989:15)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23098:41
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
+    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
+    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
+=============================================================
+{"level":30,"time":"2021-11-18T22:25:13.268Z","pid":1688,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-18T22:25:13.294Z","pid":1688,"hostname":"Will","msg":"Changed active context"}

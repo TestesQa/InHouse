@@ -32,22 +32,3 @@ Submit CadastroAdm Form
 
     #VALIDAR MENSAGEM DE CONFIRMAÇÃO;
 
-Alert Email Shold Be
-
-    ${element}                 Set Variable    css=input[error*="email válido"] 
-    Wait For Elements State    ${element}      visible                              10 
-
-Alert Permission Shold Be Required
-
-    ${element}                 Set Variable    css=div[error*="opções"] 
-    Wait For Elements State    ${element}      visible                              10 
-
-Alert Invalid Email Shold Be
-
-    ${element}                 Set Variable    css=input[error*="valid email"] 
-    Wait For Elements State    ${element}      visible                              10 
-
-Alert Phone Shold Be
-    ${element}                  Set Variable    css=input[error*="telefone"]
-    Wait For Elements State    ${element}      visible                             10
-

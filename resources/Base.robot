@@ -6,9 +6,11 @@ Library     Browser
 
 
 Resource    Helpers.robot
+Resource    actions/AlertMessage.robot
 Resource    actions/LoginActions.robot
 Resource    actions/CadAdm.robot
 Resource    actions/CadLojista.robot
+Resource    actions/CadClienteActions.robot
 
 
 *Keywords*

@@ -56,6 +56,41 @@
     "CadLogistaPhoneBranco":{
         "email":"tstes@ito.com",
         "phone":""
+    },
+    "CadClienteCompleto":{
+        "Name": "Jõao da Silva",
+        "CPF": "12345678901",
+        "Email": "joao@silva.com",
+        "DataNasc": "18/11/1980",
+        "Telefone": "43112345678"
+    },
+    "CadClienteCPFIncompleto":{
+        "Name": "Jõao da Silva",
+        "CPF": "1234567",
+        "Email": "joao@silva.com",
+        "DataNasc": "18/11/1980",
+        "Telefone": "43112345678"
+    },
+    "CadClienteEmailInvalido":{
+        "Name": "Jõao da Silva",
+        "CPF": "12345678901",
+        "Email": "joao##@",
+        "DataNasc": "18/11/1980",
+        "Telefone": "43112345678"
+    },
+    "CadClienteDataIncompleta":{
+        "Name": "Jõao da Silva",
+        "CPF": "12345678901",
+        "Email": "joao@silva.com",
+        "DataNasc": "18/11/19",
+        "Telefone": "43112345678"
+    },
+    "CadClienteTelefoneIncompleto":{
+        "Name": "Jõao da Silva",
+        "CPF": "12345678901",
+        "Email": "joao@silva.com",
+        "DataNasc": "18/11/1980",
+        "Telefone": "43112348"
     }
 
 }
