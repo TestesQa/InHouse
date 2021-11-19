@@ -11,6 +11,7 @@ Resource    actions/LoginActions.robot
 Resource    actions/CadAdm.robot
 Resource    actions/CadLojista.robot
 Resource    actions/CadClienteActions.robot
+Resource    actions/ListagemActions.robot
 
 
 *Keywords*

@@ -40,7 +40,7 @@ Alert Form Null
     Wait For Elements State    ${Telefone}    visible    10
 
 Alert CPF Incompleto
-    ${CPF}    Set Variable    css=input[error*="CPF válido"]
+    ${CPF}    Set Variable    css=input[error*="11 digitos"]
 
     Wait For Elements State    ${CPF}    visible    10
 
@@ -66,3 +66,9 @@ Alert Phone Shold Be
 Alert Date Incomplet
     ${Date}                    Set Variable    css=input[error*="8 digitos"]
     Wait For Elements State    ${Date}         visible                               10
+
+Alert Atualizado com sucesso
+    ${atualiza}    Set Variable    css=.ant-message
+
+    Wait For Elements State    ${element}    visible    5                    Login error
+    Get Text                   ${element}    contains      Atualizado

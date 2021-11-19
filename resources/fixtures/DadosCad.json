@@ -91,6 +91,18 @@
         "Email": "joao@silva.com",
         "DataNasc": "18/11/1980",
         "Telefone": "43112348"
+    },
+    "PreencheFiltroADM":{
+        "email":"test@email.com",
+        "permission":"Admin"
+    },
+    "PreencheFiltroLojista":{
+        "name":"lojistateste",
+        "email":"Emailteste@novo.com"
+    },
+    "PreencheFiltroCliente":{
+        "name":"Clientetestes",
+        "CPF":"12548784459"
     }
 
 }

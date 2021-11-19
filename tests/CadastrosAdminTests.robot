@@ -21,7 +21,7 @@ Cadastro admin com sucesso
     Go To CadAdmin Form
     Submit CadastroAdm Form    ${DadosCad}
     #Should Be Cadastro Is Available
-    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
+    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin dados em branco
 
@@ -33,7 +33,7 @@ Cadastro admin dados em branco
     Submit CadastroAdm Form               ${DadosCad}
     Alert Email Shold Be
     Alert Permission Shold Be Required
-    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
+    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin email em branco
 
@@ -44,7 +44,7 @@ Cadastro admin email em branco
     Go To CadAdmin Form
     Submit CadastroAdm Form    ${DadosCad}
     Alert Email Shold Be
-    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
+    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin permissao em branco
 
@@ -55,7 +55,7 @@ Cadastro admin permissao em branco
     Go To CadAdmin Form
     Submit CadastroAdm Form               ${DadosCad}
     Alert Permission Shold Be Required
-    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
+    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin email invalido
 
@@ -66,4 +66,4 @@ Cadastro admin email invalido
     Go To CadAdmin Form
     Submit CadastroAdm Form         ${DadosCad}
     Alert Invalid Email Shold Be
-    Click                       xpath=//*[@id="root"]/main/div/main/form/footer/button[1]
+    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]

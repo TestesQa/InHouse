@@ -1,32 +1,663 @@
-{"level":30,"time":"2021-11-18T22:24:57.907Z","pid":1688,"hostname":"Will","msg":"Listening on 65411"}
-{"level":30,"time":"2021-11-18T22:25:02.202Z","pid":1688,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-18T22:25:02.373Z","pid":1688,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-18T22:25:03.196Z","pid":1688,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-18T22:25:03.196Z","pid":1688,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:36:22.222Z","pid":11340,"hostname":"Will","msg":"Listening on 61805"}
+{"level":30,"time":"2021-11-19T18:36:24.037Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:36:24.181Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:36:24.851Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:36:24.852Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:36:42.338Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Cliente\" containing Cadastrar Cliente"}
+{"level":30,"time":"2021-11-19T18:36:43.678Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Cliente\" containing Cadastrar Cliente"}
+{"level":30,"time":"2021-11-19T18:36:45.157Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Cliente\" containing Cadastrar Cliente"}
 ================= Original suppressed error =================
-page.goto: Timeout 10000ms exceeded.
+page.waitForSelector: Timeout 10000ms exceeded.
 =========================== logs ===========================
-navigating to "https://neer.stag.dev.luby.com.br/", waiting until "load"
+waiting for selector "text="Cadastrar Cliente""
 ============================================================
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26665:49
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26079:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26060:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26051:58) {
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:36:57.595Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Cliente\" containing Cadastrar Cliente"}
+{"level":30,"time":"2021-11-19T18:36:59.338Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Cliente\" containing Cadastrar Cliente"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=input[error*="telefone"]" to be visible
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:37:10.334Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:10.335Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:37:10.335Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:37:10.368Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:10.368Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:37:10.368Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:37:12.219Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:37:12.302Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:12.960Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:37:12.961Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text="Cadastrar Lojista""
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
   name: 'TimeoutError'
 }
 =============================================================
 ================= Original suppressed error =================
-Error: Tried to take screenshot, but no page was open.
-    at Object.exists (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25989:15)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23098:41
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at new Promise (<anonymous>)
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text="Cadastrar Lojista""
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
 =============================================================
-{"level":30,"time":"2021-11-18T22:25:13.268Z","pid":1688,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-11-18T22:25:13.294Z","pid":1688,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:49.490Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
+{"level":30,"time":"2021-11-19T18:37:50.937Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
+{"level":30,"time":"2021-11-19T18:37:52.355Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
+{"level":30,"time":"2021-11-19T18:37:53.578Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
+{"level":30,"time":"2021-11-19T18:37:54.840Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar Lojista\" containing Cadastrar Lojista"}
+{"level":30,"time":"2021-11-19T18:37:55.591Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:55.591Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:37:55.591Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:37:55.622Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:55.622Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:37:55.622Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:37:57.360Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:37:57.422Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:37:57.992Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:37:57.993Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:38:11.652Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Salvar"
+  selector resolved to visible <span>Salvar</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:38:23.306Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+{"level":30,"time":"2021-11-19T18:38:25.321Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+{"level":30,"time":"2021-11-19T18:38:26.902Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Salvar"
+  selector resolved to visible <span>Salvar</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (745,277.18)
+  <div class="ant-select-item-option-content">Admin Read-Only</div> from <div>…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:38:38.240Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=\"Cadastrar usuário\" containing Cadastrar usuário"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=input[error*="email válido"]" to be visible
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:38:49.060Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:38:49.060Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:38:49.060Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:38:49.088Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:38:49.088Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:38:49.088Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:38:50.511Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:38:50.532Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:38:51.214Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:38:51.215Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:06.649Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Administradores containing Administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.713Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.766Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.812Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.854Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.905Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.951Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:06.995Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.278Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.327Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.368Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.420Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.462Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.508Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.555Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.610Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.658Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.696Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:07.739Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 4 administradores"}
+{"level":30,"time":"2021-11-19T18:39:08.521Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Administradores containing Administradores"}
+{"level":30,"time":"2021-11-19T18:39:08.573Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 administradores"}
+{"level":30,"time":"2021-11-19T18:39:09.158Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Administradores containing Administradores"}
+{"level":30,"time":"2021-11-19T18:39:09.270Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing test@email.com"}
+{"level":30,"time":"2021-11-19T18:39:09.497Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing E-mail\nStatus\nPermissão\nadmin@email.com\n\nConfirmada\n\nSys Admin\n\ntest@email.com\n\nNão confirmada\n\nAdmin\n\nteste1@teste.com\n\nNão confirmada\n\nSys Admin\n\nlopsifukku@vusra.com\n\nNão confirmada\n\nSys Admin"}
+{"level":30,"time":"2021-11-19T18:39:10.010Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Administradores containing Administradores"}
+{"level":30,"time":"2021-11-19T18:39:10.359Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Cadastrar usuário containing Cadastrar usuário"}
+{"level":30,"time":"2021-11-19T18:39:10.850Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Administradores containing Administradores"}
+{"level":30,"time":"2021-11-19T18:39:10.908Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing test@email.com"}
+{"level":30,"time":"2021-11-19T18:39:11.019Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing "}
+{"level":30,"time":"2021-11-19T18:39:11.250Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:11.250Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:39:11.251Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:11.289Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:11.289Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:39:11.289Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:12.609Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:39:12.623Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:13.142Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:39:13.142Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:27.536Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Clientes containing Clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.612Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.662Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.711Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.759Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.804Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.846Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.917Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:27.955Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.026Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.075Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.136Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.176Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.227Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.278Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.323Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.355Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.409Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.457Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.509Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.560Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.610Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:28.686Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:29.542Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Clientes containing Clientes"}
+{"level":30,"time":"2021-11-19T18:39:29.616Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/span containing A pesquisa retornou 0 clientes"}
+{"level":30,"time":"2021-11-19T18:39:30.318Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Clientes containing Clientes"}
+{"level":30,"time":"2021-11-19T18:39:30.473Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=name containing Clientetestes"}
+{"level":30,"time":"2021-11-19T18:39:30.577Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=cpf containing 125.487.844-59"}
+{"level":30,"time":"2021-11-19T18:39:30.787Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:30.834Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:30.879Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:30.925Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:30.980Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.034Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.083Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.128Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.202Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.262Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.310Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.362Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.406Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.452Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.509Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.560Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.607Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.685Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.752Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:31.799Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Sem dados"}
+{"level":30,"time":"2021-11-19T18:39:32.836Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Clientes containing Clientes"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Cadastrar usuário"
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:39:43.900Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Clientes containing Clientes"}
+{"level":30,"time":"2021-11-19T18:39:44.101Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=name containing Clientetestes"}
+{"level":30,"time":"2021-11-19T18:39:44.146Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=cpf containing 125.487.844-59"}
+{"level":30,"time":"2021-11-19T18:39:44.346Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing "}
+{"level":30,"time":"2021-11-19T18:39:44.625Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:44.626Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:39:44.626Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:44.678Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:44.678Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:39:44.678Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:39:46.241Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:39:46.326Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:39:46.952Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:39:46.952Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Lojistas"
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Lojistas"
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:40:21.354Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Lojistas containing A pesquisa retornou 0 lojistas"}
+{"level":30,"time":"2021-11-19T18:40:21.528Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=name containing lojistateste"}
+{"level":30,"time":"2021-11-19T18:40:21.562Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing Emailteste@novo.com"}
+{"level":30,"time":"2021-11-19T18:40:22.061Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div containing Nome/Razão Social\nE-mail\nStatus\n\nAlessandra\n\nshopmanager@email.com\n\nDesbloqueado\n\nElísio\n\nshopmanager2@email.com\n\nDesbloqueado\n\nMarvel testes\n\nwilliancruz@alunos.utfpr.edu.br\n\nDesbloqueado\n\nnome não informado\n\nteste1@teste.com\n\nDesbloqueado"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Lojistas"
+============================================================
+    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25766:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
+    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-11-19T18:40:34.023Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element text=Lojistas containing A pesquisa retornou 0 lojistas"}
+{"level":30,"time":"2021-11-19T18:40:34.338Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=name containing lojistateste"}
+{"level":30,"time":"2021-11-19T18:40:34.371Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing Emailteste@novo.com"}
+{"level":30,"time":"2021-11-19T18:40:34.541Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element id=email containing "}
+{"level":30,"time":"2021-11-19T18:40:34.800Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:40:34.800Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:40:34.800Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:40:34.851Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:40:34.851Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:40:34.851Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:40:36.603Z","pid":11340,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-19T18:40:36.672Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:40:37.201Z","pid":11340,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-19T18:40:37.201Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:40:54.744Z","pid":11340,"hostname":"Will","msg":"Retrieved text for element css=.ant-message containing Ocorreu um erro, verifique suas credenciais e tente novamente"}
+{"level":30,"time":"2021-11-19T18:40:56.575Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:40:56.575Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:40:56.575Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-11-19T18:40:56.604Z","pid":11340,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-11-19T18:40:56.604Z","pid":11340,"hostname":"Will","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-19T18:40:56.604Z","pid":11340,"hostname":"Will","msg":"Changed active page"}
