@@ -44,9 +44,14 @@ Alert CPF Incompleto
 
     Wait For Elements State    ${CPF}    visible    10
 
+Alert Telefone Incompleto
+    ${CPF}    Set Variable    css=input[error*="11 digitos"]
+
+    Wait For Elements State    ${CPF}    visible    10
+
 Alert Email Shold Be
 
-    ${element}                 Set Variable    css=input[error*="email válido"] 
+    ${element}                 Set Variable    css=input[error*="email"] 
     Wait For Elements State    ${element}      visible                              10 
 
 Alert Permission Shold Be Required
@@ -56,11 +61,11 @@ Alert Permission Shold Be Required
 
 Alert Invalid Email Shold Be
 
-    ${element}                 Set Variable    css=input[error*="email válido"] 
+    ${element}                 Set Variable    css=input[error*="email"] 
     Wait For Elements State    ${element}      visible                              10 
 
 Alert Phone Shold Be
-    ${element}                 Set Variable    css=input[error*="telefone"]
+    ${element}                 Set Variable    css=input[error*="phone"]
     Wait For Elements State    ${element}      visible                         10
 
 Alert Date Incomplet
@@ -70,5 +75,5 @@ Alert Date Incomplet
 Alert Atualizado com sucesso
     ${atualiza}    Set Variable    css=.ant-message
 
-    Wait For Elements State    ${element}    visible    5                    Login error
-    Get Text                   ${element}    contains      Atualizado
+    Wait For Elements State    ${atualiza}    visible    5                    Login error
+    Get Text                   ${atualiza}    contains      atualizado

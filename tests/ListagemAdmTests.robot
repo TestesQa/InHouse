@@ -1,10 +1,10 @@
 *Settings*
-Documentation      Cadastro Cliente Teste
+Documentation    Cadastro Cliente Teste
 
-Resource            ${EXECDIR}/resources/Base.robot
+Resource    ${EXECDIR}/resources/Base.robot
 
-Suite Setup         Start Session
-Test Teardown       Finish Test
+Suite Setup      Start Session
+Test Teardown    Finish Test
 
 *Test Cases*
 
@@ -12,42 +12,42 @@ Logar
     Login Admin
 
 Lista Vazia
-    [Tags]      ListavaziaADM
+    [Tags]    ListavaziaADM
 
     #Login Admin
     Go To ListagemAdm
-    List Null
+    List Null ADM
 
 Lista com Dados
-    [Tags]      ListaComDadosADM
-
-   # Login Admin
-    Go To ListagemAdm
-    Lista com Dados
-
-Lista com Filtro
-    [Tags]      ListaComFiltroADM
-
-    ${DadosCad}     Get DadosCad  PreencheFiltroADM
+    [Tags]    ListaComDadosADM
 
     #Login Admin
     Go To ListagemAdm
-    Fill FiltroADM  ${DadosCad}
+    Lista com Dados ADM
+
+Lista com Filtro
+    [Tags]    ListaComFiltroADM
+
+    ${DadosCad}    Get DadosCad    PreencheFiltroADM
+
+    #Login Admin
+    Go To ListagemAdm
+    Fill FiltroADM       ${DadosCad}
     Search Filtro
 
 Redireciona Cadastro
-    [Tags]      DirecionaCadastroADM
+    [Tags]    DirecionaCadastroADM
 
     #Login Admin
     Go To ListagemAdm
-    Go to Cadastro
+    Go to CadastroAdm
 
 Limpa Filtro
-    [Tags]      LimpaFiltroADM
-    ${DadosCad}     Get DadosCad  PreencheFiltroADM
+    [Tags]         LimpaFiltroADM
+    ${DadosCad}    Get DadosCad      PreencheFiltroADM
 
-   # Login Admin
+    #Login Admin
     Go To ListagemAdm
-    Fill FiltroADM  ${DadosCad}
+    Fill FiltroADM       ${DadosCad}
     Clear Filtro
 

@@ -1,7 +1,7 @@
 *Settings*
 Documentation    CADASTRO ADMIN TESTS
 
-Resource     ${EXECDIR}/resources/Base.robot
+Resource    ${EXECDIR}/resources/Base.robot
 
 Suite Setup      Start Session
 Test Teardown    Finish Test
@@ -18,10 +18,11 @@ Cadastro admin com sucesso
 
     ${DadosCad}    Get DadosCad    Adm1
 
+
+    #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form    ${DadosCad}
-    #Should Be Cadastro Is Available
-    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
+    #Validar Cadastro        ${DadosCad}
 
 Cadastro admin dados em branco
 
@@ -29,11 +30,12 @@ Cadastro admin dados em branco
 
     ${DadosCad}    Get DadosCad    Vazio
 
+    #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form               ${DadosCad}
     Alert Email Shold Be
     Alert Permission Shold Be Required
-    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
+
 
 Cadastro admin email em branco
 
@@ -41,29 +43,27 @@ Cadastro admin email em branco
 
     ${DadosCad}    Get DadosCad    EmailBranco
 
+    #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form    ${DadosCad}
     Alert Email Shold Be
-    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin permissao em branco
 
     [Tags]    PermissionBranco
 
-    ${DadosCad}    Get DadosCad    PermissaoBranco
-
+    ${DadosCad}                           Get DadosCad    PermissaoBranco
+    #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form               ${DadosCad}
     Alert Permission Shold Be Required
-    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]
 
 Cadastro admin email invalido
 
     [Tags]    MailInvalid
 
-    ${DadosCad}    Get DadosCad    EmailInvalido
-
+    ${DadosCad}                     Get DadosCad    EmailInvalido
+    #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form         ${DadosCad}
     Alert Invalid Email Shold Be
-    Click                       xpath=/html/body/div[1]/main/div/main/form/footer/button[1]

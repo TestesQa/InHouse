@@ -6,7 +6,8 @@ Documentation    Ações do cadastro de cliente
 Go To CadCliente
 
     Click    text=Usuários
-    Click    xpath=/html/body/div/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[3]/ul/li[1]
+    Click    text=Gerenciar Clientes
+    Click    text=Cadastrar
 
     Get Text    text="Cadastrar Cliente"
 
@@ -26,4 +27,6 @@ Submit Form Cliente
     # Click   xpath=/html/body/div[1]/main/div/main/form/footer/button[2]
 
     # Get Text    text="Cadastro realizado com sucesso"
+
+
 

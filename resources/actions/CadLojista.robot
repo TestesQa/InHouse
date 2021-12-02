@@ -6,7 +6,8 @@ Documentation    Ações para cadastro de lojista
 Go To CadLojista
 
     Click    text=Usuários
-    Click    xpath=/html/body/div[1]/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[2]/ul/li[1]/span
+    Click    text=Gerenciar Lojistas
+    Click    text=Cadastrar
 
     Get Text    text="Cadastrar Lojista"
 

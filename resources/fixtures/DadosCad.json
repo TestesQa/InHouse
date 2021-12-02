@@ -1,7 +1,7 @@
 {   
     "Adm1": {
-        "email": "emailteste@teste.com",
-        "permissao" :"Admin"
+        "email": "emailteste5@teste.com",
+        "permissao" :"Usuário Super Admin"
     },
 
     "EmailBranco": {

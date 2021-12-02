@@ -5,36 +5,72 @@ Documentation    Ações de listagem
 
 Go To ListagemAdm
     Click       text=Usuários
-    Click       xpath=/html/body/div[1]/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[1]/ul/li[2]/span
+    Click       text=Gerenciar Administradores
     Get Text    text=Administradores
 
 Go To ListagemLojista
     Click       text=Usuários
-    Click       xpath=/html/body/div[1]/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[2]/ul/li[2]/span
+    Click       text=Gerenciar Lojistas
     Get Text    text=Lojistas
 
 Go To ListagemCliente
     Click       text=Usuários
-    Click       xpath=/html/body/div[1]/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[3]/ul/li[2]/span
+    Click       text=Gerenciar Clientes
     Get Text    text=Clientes
 
-List Null
+List Null ADM
     ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
-    ${null}        Set Variable    text="A pesquisa retornou 0 administradores"
+    ${null}        Set Variable    A pesquisa retornou 0 administradore(s)
 
     Wait For Elements State    ${nullList}    visible    5          Login error
     Get Text                   ${nullList}    equal      ${null}
 
-Lista com Dados
+List Null Lojista
     ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
-    ${null}        Set Variable    text="A pesquisa retornou 0 administradores"
+    ${null}        Set Variable    A pesquisa retornou 0 lojista(s)
+
+    Wait For Elements State    ${nullList}    visible    5          Login error
+    Get Text                   ${nullList}    equal      ${null}
+
+List Null Cliente
+    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${null}        Set Variable    A pesquisa retornou 0 cliente(s)
+
+    Wait For Elements State    ${nullList}    visible    5          Login error
+    Get Text                   ${nullList}    equal      ${null}
+
+Lista com Dados ADM
+    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${null}        Set Variable    A pesquisa retornou 0 administradore(s)
 
     Wait For Elements State    ${nullList}    visible    5          Login error
     Get Text                   ${nullList}    inequal    ${null}
 
-Go to Cadastro
+Lista com Dados Lojista
+    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${null}        Set Variable    A pesquisa retornou 0 lojista(s)
+
+    Wait For Elements State    ${nullList}    visible    5          Login error
+    Get Text                   ${nullList}    inequal    ${null}
+
+Lista com Dados Cliente
+    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${null}        Set Variable    A pesquisa retornou 0 cliente(s)
+
+    Wait For Elements State    ${nullList}    visible    5          Login error
+    Get Text                   ${nullList}    inequal    ${null}
+
+Go to CadastroAdm
     Click       text=Cadastrar
-    Get Text    text=Cadastrar usuário
+    Get Text    text=Cadastrar Administrador
+
+Go to CadastroLojista
+    Click       text=Cadastrar
+    Get Text    text=Cadastrar Lojista
+
+Go to CadastroCli
+    Click       text=Cadastrar
+    Get Text    text=Cadastrar Clientes
 
 Clear Filtro
     Click       text=Limpar

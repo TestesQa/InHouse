@@ -10,25 +10,33 @@ Login Admin
 Go To CadAdmin Form
 
     Click    text=Usuários
-    Click    xpath=/html/body/div[1]/main/div/aside/div[1]/div[2]/ul/li/ul/ul/li/ul/li[1]/ul/li[1]/span
+    Click    text=Gerenciar Administradores
+    Click    xpath=/html/body/div/main/div/main/div/div[1]/a/button
 
-    Get Text    text="Cadastrar usuário"
+    Get Text    text="Cadastrar Administrador"
 
 Submit CadastroAdm Form
     [Arguments]    ${DadosCad}
-
-
+    ${Cadastro}     Set Variable        css=.ant-message
 
     # ${promise} = Promise To Upload File ${EXECDIR}/resources/fixtures/thumbnails/${DadosCad}[IMAGEM]
     # Click           \ #ID_DA_CLASSE
     # Wait For    ${promise}
 
-    Fill Text    id=email                                                                  ${DadosCad}[email]
-    Click        xpath=/html/body/div[1]/main/div/main/form/div/div/div[2]/span/div/div
+    Fill Text    id=email                                               ${DadosCad}[email]
+    Click        xpath=//*[@id="root"]/main/div/main/form/div/div/div[2]/span/div/div/span[2]
+    Click        text=Usuário Super Admin
+    Click        text=Salvar
 
-    #VALIDAR LISTA SUSPENSA
+    Wait For Elements State    ${Cadastro}    visible     5
+    Get Text                   ${Cadastro}      contains    ${DadosCad}[email]
 
-    Click    text=Salvar
+
 
     #VALIDAR MENSAGEM DE CONFIRMAÇÃO;
+Validar Cadastro
+    [Arguments]    ${DadosCad}
 
+    ${Valida}    Set Variable    xpath=//*[@id="root"]/main/div/main/div/div[2]/div[1]/div
+
+    Get Text    ${Valida}    contains    ${DadosCad}[email]
