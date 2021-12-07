@@ -1,179 +1,32 @@
-{"level":30,"time":"2021-12-02T20:51:07.904Z","pid":7248,"hostname":"Will","msg":"Listening on 50345"}
-{"level":30,"time":"2021-12-02T20:51:09.195Z","pid":7248,"hostname":"Will","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-02T20:51:09.247Z","pid":7248,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-12-02T20:51:09.683Z","pid":7248,"hostname":"Will","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-02T20:51:09.683Z","pid":7248,"hostname":"Will","msg":"Changed active page"}
+{"level":30,"time":"2021-12-07T19:39:34.598Z","pid":11744,"hostname":"Will","msg":"Listening on 59970"}
+{"level":30,"time":"2021-12-07T19:39:35.793Z","pid":11744,"hostname":"Will","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-12-07T19:39:35.834Z","pid":11744,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-12-07T19:39:36.275Z","pid":11744,"hostname":"Will","msg":"Video path: undefined"}
+{"level":30,"time":"2021-12-07T19:39:36.276Z","pid":11744,"hostname":"Will","msg":"Changed active page"}
 ================= Original suppressed error =================
-page.click: Timeout 10000ms exceeded.
+page.goto: Timeout 10000ms exceeded.
 =========================== logs ===========================
-waiting for selector "text=Usuários"
+navigating to "https://neer.stag.dev.luby.com.br/", waiting until "load"
 ============================================================
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
-  name: 'TimeoutError'
-}
-=============================================================
-================= Original suppressed error =================
-page.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
-  name: 'TimeoutError'
-}
-=============================================================
-================= Original suppressed error =================
-page.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
-  name: 'TimeoutError'
-}
-=============================================================
-================= Original suppressed error =================
-page.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
-  name: 'TimeoutError'
-}
-=============================================================
-================= Original suppressed error =================
-page.click: Protocol error (Runtime.callFunctionOn): Target closed.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25846:45)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25739:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25720:53)
-    at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25711:58) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23100:47
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24183:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:24177:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24173:12)
-    at PlaywrightServer.takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24251:55)
-    at handleUnary (C:\Python39\lib\site-packages\Browser\wrapper\index.js:17983:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23100:47
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24183:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:24177:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24173:12)
-    at PlaywrightServer.takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24251:55)
-    at handleUnary (C:\Python39\lib\site-packages\Browser\wrapper\index.js:17983:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23100:47
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24183:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:24177:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24173:12)
-    at PlaywrightServer.takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24251:55)
-    at handleUnary (C:\Python39\lib\site-packages\Browser\wrapper\index.js:17983:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23100:47
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24183:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:24177:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24173:12)
-    at PlaywrightServer.takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24251:55)
-    at handleUnary (C:\Python39\lib\site-packages\Browser\wrapper\index.js:17983:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23100:47
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
-    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
-    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24183:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:24177:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24173:12)
-    at PlaywrightServer.takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24251:55)
-    at handleUnary (C:\Python39\lib\site-packages\Browser\wrapper\index.js:17983:13) {
-  name: 'Error'
-}
-=============================================================
-{"level":30,"time":"2021-12-02T20:52:03.779Z","pid":7248,"hostname":"Will","msg":"Changed active context"}
-{"level":30,"time":"2021-12-02T20:52:03.779Z","pid":7248,"hostname":"Will","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-02T20:52:03.780Z","pid":7248,"hostname":"Will","msg":"Changed active page"}
-================= Original suppressed error =================
-page.bringToFront: Target page, context or browser has been closed
-    at BrowserState.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26524:53)
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26079:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26060:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26054:71
-    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26050:12)
-    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26519:16)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26772:55
-    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26079:23)
-    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26060:53)
-    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26054:71
-    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26050:12)
-    at _switchPage (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26760:12)
-    at Object.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26888:42)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:26665:49
     at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26079:23)
     at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26060:53)
     at fulfilled (C:\Python39\lib\site-packages\Browser\wrapper\index.js:26051:58) {
-  name: 'Error'
+  name: 'TimeoutError'
 }
 =============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at Object.exists (C:\Python39\lib\site-packages\Browser\wrapper\index.js:25989:15)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23098:41
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23045:23)
+    at Object.next (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23026:53)
+    at C:\Python39\lib\site-packages\Browser\wrapper\index.js:23020:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23016:12)
+    at takeScreenshot (C:\Python39\lib\site-packages\Browser\wrapper\index.js:23072:12)
+    at PlaywrightServer.<anonymous> (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24260:50)
+    at step (C:\Python39\lib\site-packages\Browser\wrapper\index.js:24202:23)
+=============================================================
+{"level":30,"time":"2021-12-07T19:39:46.318Z","pid":11744,"hostname":"Will","msg":"Changed active context"}
+{"level":30,"time":"2021-12-07T19:39:46.329Z","pid":11744,"hostname":"Will","msg":"Changed active context"}

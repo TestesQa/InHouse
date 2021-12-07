@@ -17,7 +17,6 @@ Go To CadAdmin Form
 
 Submit CadastroAdm Form
     [Arguments]    ${DadosCad}
-    ${Cadastro}     Set Variable        css=.ant-message
 
     # ${promise} = Promise To Upload File ${EXECDIR}/resources/fixtures/thumbnails/${DadosCad}[IMAGEM]
     # Click           \ #ID_DA_CLASSE
@@ -28,10 +27,6 @@ Submit CadastroAdm Form
     Click        text=Usuário Super Admin
     Click        text=Salvar
 
-    Wait For Elements State    ${Cadastro}    visible     5
-    Get Text                   ${Cadastro}      contains    ${DadosCad}[email]
-
-
 
     #VALIDAR MENSAGEM DE CONFIRMAÇÃO;
 Validar Cadastro
@@ -40,3 +35,10 @@ Validar Cadastro
     ${Valida}    Set Variable    xpath=//*[@id="root"]/main/div/main/div/div[2]/div[1]/div
 
     Get Text    ${Valida}    contains    ${DadosCad}[email]
+
+Check Submit
+    [Arguments]    ${DadosCad}
+    ${Cadastro}     Set Variable        css=.ant-message
+
+    Wait For Elements State    ${Cadastro}    visible     5
+    Get Text                   ${Cadastro}      contains    ${DadosCad}[email]

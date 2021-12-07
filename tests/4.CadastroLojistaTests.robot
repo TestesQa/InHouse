@@ -17,7 +17,7 @@ Cadastro Lojista Sucesso Obrigatorio
     [Tags]         CadLojista
     ${DadosCad}    Get DadosCad    CadLojista
 
-    #Login Admin
+    Login Admin
     Go To CadLojista
     Submit Form CadLojista    ${DadosCad}
     #Validar Cadastro

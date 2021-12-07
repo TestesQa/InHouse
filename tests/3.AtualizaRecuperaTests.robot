@@ -22,7 +22,7 @@ Atualizar CadAdm
 Atualizar CadLojista
     [Tags]    AtualizaLojista
 
-    #Login Admin
+    Login Admin
     Go To ListagemLojista
     Edit Lojista
     Alert Atualizado com sucesso

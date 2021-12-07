@@ -1,27 +1,22 @@
 {   
     "Adm1": {
-        "email": "emailteste5@teste.com",
-        "permissao" :"Usuário Super Admin"
-    },
+        "email": "emailteste7@teste.com"
+        },
 
     "EmailBranco": {
-        "email": "",
-        "permissao" :"SysAdmin"
+        "email": ""
     },
 
     "Vazio": {
-        "email": "",
-        "permissao": ""
+        "email": ""
     },
 
     "PermissaoBranco":{
-        "email":"email2@email.com",
-        "permissao": ""
+        "email":"email2@email.com"
     },
 
     "EmailInvalido":{
-        "email": "emailinvalido@",
-        "permissao": "Admin"
+        "email": "emailinvalido@"
     },
     "CadLojista": {
         "email":"lojista@email.com",

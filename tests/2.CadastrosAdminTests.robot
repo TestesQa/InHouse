@@ -8,9 +8,9 @@ Test Teardown    Finish Test
 
 *Test Cases*
 
-Login Admin
+#Login Admin
 
-    Login Admin
+    #Login Admin
 
 Cadastro admin com sucesso
 
@@ -22,17 +22,15 @@ Cadastro admin com sucesso
     #Login Admin
     Go To CadAdmin Form
     Submit CadastroAdm Form    ${DadosCad}
-    #Validar Cadastro        ${DadosCad}
+    Check Submit               ${DadosCad}
 
 Cadastro admin dados em branco
 
     [Tags]    CadBranco
 
-    ${DadosCad}    Get DadosCad    Vazio
-
     #Login Admin
     Go To CadAdmin Form
-    Submit CadastroAdm Form               ${DadosCad}
+    Click       text=Salvar
     Alert Email Shold Be
     Alert Permission Shold Be Required
 
@@ -53,9 +51,11 @@ Cadastro admin permissao em branco
     [Tags]    PermissionBranco
 
     ${DadosCad}                           Get DadosCad    PermissaoBranco
+    
     #Login Admin
     Go To CadAdmin Form
-    Submit CadastroAdm Form               ${DadosCad}
+    Fill Text   id=email    testepermission@teste.com
+    Click       text=Salvar
     Alert Permission Shold Be Required
 
 Cadastro admin email invalido
