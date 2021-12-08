@@ -8,9 +8,9 @@ Test Teardown    Finish Test
 
 *Test Cases*
 
-#Login Admin
+Login Admin
 
-    #Login Admin
+    Login Admin
 
 Cadastro admin com sucesso
 
