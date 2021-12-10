@@ -66,7 +66,7 @@ Delete Admin
 
     ${delete}    Set Variable    css=.ant-message
 
-    Click                      id=cell-4-9
+    Click                      id=cell-4-29
     Click                      text=Excluir
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
