@@ -14,8 +14,17 @@ Go To CadLojista
 Submit Form CadLojista
     [Arguments]    ${DadosCad}
 
+    Fill Text    id=name     ${DadosCad}[nome]
     Fill Text    id=email    ${DadosCad}[email]
-    Fill Text    id=phone    ${DadosCad}[phone]
+    Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/form/div[3]/div[2]/div[1]/div/input    ${DadosCad}[phone]
+    Fill Text    id=doc     ${DadosCad}[CPFCNPJ]
+    Fill Text    id=tradingName  ${DadosCad}[fantasia]
+    Fill Text      xpath=//*[@id="root"]/main/div/main/div/div/form/div[7]/div[2]/div[1]/div/input      ${DadosCad}[cep]
+    Fill Text       id=address_street       ${DadosCad}[logradouro]
+    Fill Text       id=address_number       ${DadosCad}[numero]
+    Fill Text       id=address_city         ${DadosCad}[Cidade]
+
+
 
 Dados Adicionais
 

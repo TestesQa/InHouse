@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.1 on win32)" generated="20211210 11:12:22.023" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.1 on win32)" generated="20211215 17:19:52.806" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Luby\NeerHouse\QA\frontend\tests">
-<suite id="s1-s1" name="1.LoginTests" source="C:\Luby\NeerHouse\QA\frontend\tests\1.LoginTests.robot">
+<suite id="s1-s1" name="4.CadastroLojistaTests" source="C:\Luby\NeerHouse\QA\frontend\tests\4.CadastroLojistaTests.robot">
 <kw name="Start Session" library="Base" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>chromium</arg>
@@ -9,1605 +9,22 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211210 11:12:30.927" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\4873c1f6-213d-4510-bdd4-95de5ffffcef"}</msg>
-<msg timestamp="20211210 11:12:35.717" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\4873c1f6-213d-4510-bdd4-95de5ffffcef"}</msg>
-<status status="PASS" starttime="20211210 11:12:30.926" endtime="20211210 11:12:35.718"/>
+<msg timestamp="20211215 17:19:53.641" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\787e7248-a361-4bc2-8d8d-8e9670333097"}</msg>
+<msg timestamp="20211215 17:19:54.221" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\787e7248-a361-4bc2-8d8d-8e9670333097"}</msg>
+<status status="PASS" starttime="20211215 17:19:53.641" endtime="20211215 17:19:54.221"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://neer.stag.dev.luby.com.br/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20211210 11:12:42.076" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
-<msg timestamp="20211210 11:12:42.076" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211210 11:12:35.718" endtime="20211210 11:12:42.076"/>
+<msg timestamp="20211215 17:19:58.431" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
+<msg timestamp="20211215 17:19:58.431" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211215 17:19:54.222" endtime="20211215 17:19:58.431"/>
 </kw>
-<status status="PASS" starttime="20211210 11:12:30.926" endtime="20211210 11:12:42.076"/>
+<status status="PASS" starttime="20211215 17:19:53.641" endtime="20211215 17:19:58.431"/>
 </kw>
-<test id="s1-s1-t1" name="Fazer login">
-<kw name="Login With" library="LoginActions">
-<arg>shopmanager@email.com</arg>
-<arg>12345678</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:42.092" level="INFO">Fills the text 'shopmanager@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:42.092" endtime="20211210 11:12:43.660"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:43.661" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:43.660" endtime="20211210 11:12:43.699"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:43.699" endtime="20211210 11:12:43.963"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:42.091" endtime="20211210 11:12:43.964"/>
-</kw>
-<kw name="User Shold Be Logged In" library="LoginActions">
-<kw name="Wait For Elements State" library="Browser">
-<arg>css=.anticon-home</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:49.654" level="INFO">Waited for Element with selector css=.anticon-home at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:43.965" endtime="20211210 11:12:49.654"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:43.965" endtime="20211210 11:12:49.654"/>
-</kw>
-<kw name="Take ScreenShot And Logout" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:50.165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:49.655" endtime="20211210 11:12:50.165"/>
-</kw>
-<kw name="Do logout" library="LoginActions">
-<kw name="Click" library="Browser">
-<arg>xpath=//*[@id="root"]/main/div/main/header/div</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:50.166" endtime="20211210 11:12:50.325"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Sair</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:50.325" endtime="20211210 11:12:50.621"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:50.165" endtime="20211210 11:12:50.621"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:49.655" endtime="20211210 11:12:50.621"/>
-</kw>
-<tag>loginsucesso</tag>
-<status status="PASS" starttime="20211210 11:12:42.077" endtime="20211210 11:12:50.622"/>
-</test>
-<test id="s1-s1-t2" name="Ambos em branco">
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:50.634" endtime="20211210 11:12:50.691"/>
-</kw>
-<kw name="Alert login Shold Be Required" library="AlertMessage">
-<kw name="Set Variable" library="BuiltIn">
-<var>${element}</var>
-<arg>css=input[error="email is a required field"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:50.700" level="INFO">${element} = css=input[error="email is a required field"]</msg>
-<status status="PASS" starttime="20211210 11:12:50.700" endtime="20211210 11:12:50.700"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>${element}</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:50.713" level="INFO">Waited for Element with selector css=input[error="email is a required field"] at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:50.700" endtime="20211210 11:12:50.713"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:50.700" endtime="20211210 11:12:50.713"/>
-</kw>
-<kw name="Alert password Shold Be Required" library="AlertMessage">
-<kw name="Set Variable" library="BuiltIn">
-<var>${element}</var>
-<arg>css=input[error="password is a required field"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:50.714" level="INFO">${element} = css=input[error="password is a required field"]</msg>
-<status status="PASS" starttime="20211210 11:12:50.714" endtime="20211210 11:12:50.714"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>${element}</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:50.722" level="INFO">Waited for Element with selector css=input[error="password is a required field"] at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:50.715" endtime="20211210 11:12:50.722"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:50.714" endtime="20211210 11:12:50.723"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:50.893" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:50.724" endtime="20211210 11:12:50.893"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:50.723" endtime="20211210 11:12:50.894"/>
-</kw>
-<tag>CamposVazios</tag>
-<status status="PASS" starttime="20211210 11:12:50.630" endtime="20211210 11:12:50.894"/>
-</test>
-<test id="s1-s1-t3" name="Login em branco">
-<kw name="Login With" library="LoginActions">
-<arg>${EMPTY}</arg>
-<arg>123</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:50.905" level="INFO">Fills the text '' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:50.904" endtime="20211210 11:12:50.928"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:50.928" level="INFO">Fills the text '123' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:50.928" endtime="20211210 11:12:50.964"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:50.964" endtime="20211210 11:12:51.019"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:50.904" endtime="20211210 11:12:51.019"/>
-</kw>
-<kw name="Alert login Shold Be Required" library="AlertMessage">
-<kw name="Set Variable" library="BuiltIn">
-<var>${element}</var>
-<arg>css=input[error="email is a required field"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:51.020" level="INFO">${element} = css=input[error="email is a required field"]</msg>
-<status status="PASS" starttime="20211210 11:12:51.020" endtime="20211210 11:12:51.020"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>${element}</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:51.030" level="INFO">Waited for Element with selector css=input[error="email is a required field"] at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:51.021" endtime="20211210 11:12:51.030"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:51.020" endtime="20211210 11:12:51.030"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:51.184" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:51.031" endtime="20211210 11:12:51.184"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:51.031" endtime="20211210 11:12:51.185"/>
-</kw>
-<tag>LoginVazio</tag>
-<status status="PASS" starttime="20211210 11:12:50.900" endtime="20211210 11:12:51.185"/>
-</test>
-<test id="s1-s1-t4" name="Senha incorreta">
-<kw name="Login With" library="LoginActions">
-<arg>shopmanager@gmail.com</arg>
-<arg>123</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:51.198" level="INFO">Fills the text 'shopmanager@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:51.198" endtime="20211210 11:12:51.228"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:51.229" level="INFO">Fills the text '123' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:51.228" endtime="20211210 11:12:51.255"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:51.255" endtime="20211210 11:12:51.360"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:51.198" endtime="20211210 11:12:51.360"/>
-</kw>
-<kw name="Alert Text Shold Be" library="AlertMessage">
-<arg>Ocorreu um erro, verifique suas credenciais e tente novamente</arg>
-<kw name="Set Variable" library="BuiltIn">
-<var>${element}</var>
-<arg>css=.ant-message</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:51.362" level="INFO">${element} = css=.ant-message</msg>
-<status status="PASS" starttime="20211210 11:12:51.361" endtime="20211210 11:12:51.362"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>${element}</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<arg>Login error</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:51.881" level="INFO">Waited for Element with selector css=.ant-message at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:51.362" endtime="20211210 11:12:51.881"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>${element}</arg>
-<arg>equal</arg>
-<arg>${expect_message}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:51.881" endtime="20211210 11:12:51.911"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:51.361" endtime="20211210 11:12:51.911"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:52.066" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:51.913" endtime="20211210 11:12:52.066"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:51.912" endtime="20211210 11:12:52.067"/>
-</kw>
-<tag>Senhaincorreta</tag>
-<status status="PASS" starttime="20211210 11:12:51.190" endtime="20211210 11:12:52.067"/>
-</test>
-<test id="s1-s1-t5" name="Email invalido">
-<kw name="Login With" library="LoginActions">
-<arg>shomanager@ssl</arg>
-<arg>123</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:52.078" level="INFO">Fills the text 'shomanager@ssl' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:52.077" endtime="20211210 11:12:52.104"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:52.104" level="INFO">Fills the text '123' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:52.104" endtime="20211210 11:12:52.135"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:52.135" endtime="20211210 11:12:52.241"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:52.076" endtime="20211210 11:12:52.241"/>
-</kw>
-<kw name="Alert login Shold Be" library="AlertMessage">
-<kw name="Set Variable" library="BuiltIn">
-<var>${element}</var>
-<arg>css=input[error="email must be a valid email"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:52.242" level="INFO">${element} = css=input[error="email must be a valid email"]</msg>
-<status status="PASS" starttime="20211210 11:12:52.242" endtime="20211210 11:12:52.242"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>${element}</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211210 11:12:52.251" level="INFO">Waited for Element with selector css=input[error="email must be a valid email"] at state visible</msg>
-<status status="PASS" starttime="20211210 11:12:52.243" endtime="20211210 11:12:52.251"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:52.242" endtime="20211210 11:12:52.251"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:52.418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:52.252" endtime="20211210 11:12:52.418"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:52.251" endtime="20211210 11:12:52.419"/>
-</kw>
-<tag>EmailInvalido</tag>
-<status status="PASS" starttime="20211210 11:12:52.072" endtime="20211210 11:12:52.419"/>
-</test>
-<doc>Login Tests</doc>
-<status status="PASS" starttime="20211210 11:12:22.055" endtime="20211210 11:12:52.424"/>
-</suite>
-<suite id="s1-s2" name="2.CadastrosAdminTests" source="C:\Luby\NeerHouse\QA\frontend\tests\2.CadastrosAdminTests.robot">
-<kw name="Start Session" library="Base" type="SETUP">
-<kw name="New Browser" library="Browser">
-<arg>chromium</arg>
-<arg>False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211210 11:12:52.519" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\467954dd-4358-479e-a95b-5d880ab912fa"}</msg>
-<msg timestamp="20211210 11:12:53.133" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\467954dd-4358-479e-a95b-5d880ab912fa"}</msg>
-<status status="PASS" starttime="20211210 11:12:52.518" endtime="20211210 11:12:53.133"/>
-</kw>
-<kw name="New Page" library="Browser">
-<arg>https://neer.stag.dev.luby.com.br/</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<msg timestamp="20211210 11:12:57.329" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
-<msg timestamp="20211210 11:12:57.330" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211210 11:12:53.134" endtime="20211210 11:12:57.330"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:52.518" endtime="20211210 11:12:57.330"/>
-</kw>
-<test id="s1-s2-t1" name="Login Admin">
-<kw name="Login Admin" library="CadAdm">
-<kw name="Login With" library="LoginActions">
-<arg>admin@email.com</arg>
-<arg>12345678</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:57.342" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:57.341" endtime="20211210 11:12:57.383"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:12:57.384" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:12:57.383" endtime="20211210 11:12:57.412"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:12:57.413" endtime="20211210 11:12:58.965"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:57.341" endtime="20211210 11:12:58.965"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:57.340" endtime="20211210 11:12:58.965"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:12:59.159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:12:58.966" endtime="20211210 11:12:59.159"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:58.965" endtime="20211210 11:12:59.159"/>
-</kw>
-<status status="PASS" starttime="20211210 11:12:57.330" endtime="20211210 11:12:59.160"/>
-</test>
-<test id="s1-s2-t2" name="Cadastro admin com sucesso">
-<kw name="Get DadosCad" library="Helpers">
-<var>${DadosCad}</var>
-<arg>Adm1</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${fixture}</var>
-<arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211210 11:12:59.189" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211210 11:12:59.193" level="INFO">${fixture} = {   
-    "Adm1": {
-        "email": "emailteste10@teste.com"
-        },
-
-    "EmailBranco": {
-        "email": ""
-    },
-
-    "Vazio": {
-        "email": ""
-    },
-
-    "PermissaoBranco":{
-        "em...</msg>
-<status status="PASS" starttime="20211210 11:12:59.188" endtime="20211210 11:12:59.194"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${json}</var>
-<arg>json.loads($fixture)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211210 11:12:59.210" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
-<status status="PASS" starttime="20211210 11:12:59.194" endtime="20211210 11:12:59.211"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${select_DadosCad}</var>
-<arg>${json}[${DadosCad}]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:12:59.211" level="INFO">${select_DadosCad} = {'email': 'emailteste10@teste.com'}</msg>
-<status status="PASS" starttime="20211210 11:12:59.211" endtime="20211210 11:12:59.211"/>
-</kw>
-<msg timestamp="20211210 11:12:59.211" level="INFO">${DadosCad} = {'email': 'emailteste10@teste.com'}</msg>
-<status status="PASS" starttime="20211210 11:12:59.188" endtime="20211210 11:12:59.211"/>
-</kw>
-<kw name="Go To CadAdmin Form" library="CadAdm">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:09.345" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:13:09.436" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:12:59.212" endtime="20211210 11:13:09.436"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:09.437" endtime="20211210 11:13:09.437"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div/main/div/main/div/div[1]/a/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:09.437" endtime="20211210 11:13:09.437"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text="Cadastrar Administrador"</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:09.437" endtime="20211210 11:13:09.437"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:12:59.212" endtime="20211210 11:13:09.437"/>
-</kw>
-<kw name="Submit CadastroAdm Form" library="CadAdm">
-<arg>${DadosCad}</arg>
-<status status="NOT RUN" starttime="20211210 11:13:09.438" endtime="20211210 11:13:09.438"/>
-</kw>
-<kw name="Check Submit" library="CadAdm">
-<arg>${DadosCad}</arg>
-<status status="NOT RUN" starttime="20211210 11:13:09.439" endtime="20211210 11:13:09.439"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:09.562" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:09.440" endtime="20211210 11:13:09.562"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:09.439" endtime="20211210 11:13:09.562"/>
-</kw>
-<tag>Cadastro</tag>
-<status status="FAIL" starttime="20211210 11:12:59.172" endtime="20211210 11:13:09.563">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s2-t3" name="Cadastro admin dados em branco">
-<kw name="Go To CadAdmin Form" library="CadAdm">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:19.738" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:13:19.739" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:13:09.591" endtime="20211210 11:13:19.739"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:19.739" endtime="20211210 11:13:19.739"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div/main/div/main/div/div[1]/a/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:19.739" endtime="20211210 11:13:19.739"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text="Cadastrar Administrador"</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:19.740" endtime="20211210 11:13:19.740"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:13:09.590" endtime="20211210 11:13:19.740"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Salvar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:19.741" endtime="20211210 11:13:19.741"/>
-</kw>
-<kw name="Alert Email Shold Be" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:13:19.742" endtime="20211210 11:13:19.742"/>
-</kw>
-<kw name="Alert Permission Shold Be Required" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:13:19.742" endtime="20211210 11:13:19.742"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:19.873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:19.743" endtime="20211210 11:13:19.873"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:19.743" endtime="20211210 11:13:19.873"/>
-</kw>
-<tag>CadBranco</tag>
-<status status="FAIL" starttime="20211210 11:13:09.587" endtime="20211210 11:13:19.874">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s2-t4" name="Cadastro admin email em branco">
-<kw name="Get DadosCad" library="Helpers">
-<var>${DadosCad}</var>
-<arg>EmailBranco</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${fixture}</var>
-<arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211210 11:13:19.887" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211210 11:13:19.887" level="INFO">${fixture} = {   
-    "Adm1": {
-        "email": "emailteste10@teste.com"
-        },
-
-    "EmailBranco": {
-        "email": ""
-    },
-
-    "Vazio": {
-        "email": ""
-    },
-
-    "PermissaoBranco":{
-        "em...</msg>
-<status status="PASS" starttime="20211210 11:13:19.886" endtime="20211210 11:13:19.887"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${json}</var>
-<arg>json.loads($fixture)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211210 11:13:19.888" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
-<status status="PASS" starttime="20211210 11:13:19.887" endtime="20211210 11:13:19.888"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${select_DadosCad}</var>
-<arg>${json}[${DadosCad}]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:13:19.889" level="INFO">${select_DadosCad} = {'email': ''}</msg>
-<status status="PASS" starttime="20211210 11:13:19.889" endtime="20211210 11:13:19.889"/>
-</kw>
-<msg timestamp="20211210 11:13:19.889" level="INFO">${DadosCad} = {'email': ''}</msg>
-<status status="PASS" starttime="20211210 11:13:19.886" endtime="20211210 11:13:19.889"/>
-</kw>
-<kw name="Go To CadAdmin Form" library="CadAdm">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:30.041" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:13:30.042" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:13:19.890" endtime="20211210 11:13:30.042"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:30.043" endtime="20211210 11:13:30.043"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div/main/div/main/div/div[1]/a/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:30.043" endtime="20211210 11:13:30.043"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text="Cadastrar Administrador"</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:30.043" endtime="20211210 11:13:30.043"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:13:19.890" endtime="20211210 11:13:30.043"/>
-</kw>
-<kw name="Submit CadastroAdm Form" library="CadAdm">
-<arg>${DadosCad}</arg>
-<status status="NOT RUN" starttime="20211210 11:13:30.045" endtime="20211210 11:13:30.045"/>
-</kw>
-<kw name="Alert Email Shold Be" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:13:30.046" endtime="20211210 11:13:30.046"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:30.184" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:30.046" endtime="20211210 11:13:30.184"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:30.046" endtime="20211210 11:13:30.184"/>
-</kw>
-<tag>MailBranco</tag>
-<status status="FAIL" starttime="20211210 11:13:19.882" endtime="20211210 11:13:30.186">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s2-t5" name="Cadastro admin permissao em branco">
-<kw name="Get DadosCad" library="Helpers">
-<var>${DadosCad}</var>
-<arg>PermissaoBranco</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${fixture}</var>
-<arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211210 11:13:30.196" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211210 11:13:30.196" level="INFO">${fixture} = {   
-    "Adm1": {
-        "email": "emailteste10@teste.com"
-        },
-
-    "EmailBranco": {
-        "email": ""
-    },
-
-    "Vazio": {
-        "email": ""
-    },
-
-    "PermissaoBranco":{
-        "em...</msg>
-<status status="PASS" starttime="20211210 11:13:30.196" endtime="20211210 11:13:30.196"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${json}</var>
-<arg>json.loads($fixture)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211210 11:13:30.197" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
-<status status="PASS" starttime="20211210 11:13:30.196" endtime="20211210 11:13:30.197"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${select_DadosCad}</var>
-<arg>${json}[${DadosCad}]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:13:30.198" level="INFO">${select_DadosCad} = {'email': 'email2@email.com'}</msg>
-<status status="PASS" starttime="20211210 11:13:30.197" endtime="20211210 11:13:30.198"/>
-</kw>
-<msg timestamp="20211210 11:13:30.199" level="INFO">${DadosCad} = {'email': 'email2@email.com'}</msg>
-<status status="PASS" starttime="20211210 11:13:30.195" endtime="20211210 11:13:30.199"/>
-</kw>
-<kw name="Go To CadAdmin Form" library="CadAdm">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:40.325" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:13:40.326" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:13:30.200" endtime="20211210 11:13:40.326"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:40.327" endtime="20211210 11:13:40.327"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div/main/div/main/div/div[1]/a/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:40.327" endtime="20211210 11:13:40.327"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text="Cadastrar Administrador"</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:40.327" endtime="20211210 11:13:40.327"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:13:30.200" endtime="20211210 11:13:40.328"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>testepermission@teste.com</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:40.328" endtime="20211210 11:13:40.328"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Salvar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:40.329" endtime="20211210 11:13:40.329"/>
-</kw>
-<kw name="Alert Permission Shold Be Required" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:13:40.329" endtime="20211210 11:13:40.329"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:40.458" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:40.331" endtime="20211210 11:13:40.458"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:40.331" endtime="20211210 11:13:40.459"/>
-</kw>
-<tag>PermissionBranco</tag>
-<status status="FAIL" starttime="20211210 11:13:30.192" endtime="20211210 11:13:40.459">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s2-t6" name="Cadastro admin email invalido">
-<kw name="Get DadosCad" library="Helpers">
-<var>${DadosCad}</var>
-<arg>EmailInvalido</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${fixture}</var>
-<arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211210 11:13:40.469" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211210 11:13:40.470" level="INFO">${fixture} = {   
-    "Adm1": {
-        "email": "emailteste10@teste.com"
-        },
-
-    "EmailBranco": {
-        "email": ""
-    },
-
-    "Vazio": {
-        "email": ""
-    },
-
-    "PermissaoBranco":{
-        "em...</msg>
-<status status="PASS" starttime="20211210 11:13:40.469" endtime="20211210 11:13:40.470"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${json}</var>
-<arg>json.loads($fixture)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211210 11:13:40.470" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
-<status status="PASS" starttime="20211210 11:13:40.470" endtime="20211210 11:13:40.470"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${select_DadosCad}</var>
-<arg>${json}[${DadosCad}]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211210 11:13:40.471" level="INFO">${select_DadosCad} = {'email': 'emailinvalido@'}</msg>
-<status status="PASS" starttime="20211210 11:13:40.470" endtime="20211210 11:13:40.471"/>
-</kw>
-<msg timestamp="20211210 11:13:40.471" level="INFO">${DadosCad} = {'email': 'emailinvalido@'}</msg>
-<status status="PASS" starttime="20211210 11:13:40.469" endtime="20211210 11:13:40.471"/>
-</kw>
-<kw name="Go To CadAdmin Form" library="CadAdm">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:50.621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-5.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:13:50.622" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:13:40.472" endtime="20211210 11:13:50.622"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:50.622" endtime="20211210 11:13:50.622"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div/main/div/main/div/div[1]/a/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:50.622" endtime="20211210 11:13:50.622"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text="Cadastrar Administrador"</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:13:50.622" endtime="20211210 11:13:50.622"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:13:40.471" endtime="20211210 11:13:50.623"/>
-</kw>
-<kw name="Submit CadastroAdm Form" library="CadAdm">
-<arg>${DadosCad}</arg>
-<status status="NOT RUN" starttime="20211210 11:13:50.624" endtime="20211210 11:13:50.624"/>
-</kw>
-<kw name="Alert Invalid Email Shold Be" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:13:50.624" endtime="20211210 11:13:50.624"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:50.744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:50.625" endtime="20211210 11:13:50.744"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:50.625" endtime="20211210 11:13:50.744"/>
-</kw>
-<tag>MailInvalid</tag>
-<status status="FAIL" starttime="20211210 11:13:40.465" endtime="20211210 11:13:50.745">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<doc>CADASTRO ADMIN TESTS</doc>
-<status status="FAIL" starttime="20211210 11:12:52.492" endtime="20211210 11:13:50.751"/>
-</suite>
-<suite id="s1-s3" name="3.AtualizaRecuperaTests" source="C:\Luby\NeerHouse\QA\frontend\tests\3.AtualizaRecuperaTests.robot">
-<kw name="Start Session" library="Base" type="SETUP">
-<kw name="New Browser" library="Browser">
-<arg>chromium</arg>
-<arg>False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211210 11:13:50.845" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\41d13e34-ec86-490b-ba5c-267d3cd2ed69"}</msg>
-<msg timestamp="20211210 11:13:51.624" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\41d13e34-ec86-490b-ba5c-267d3cd2ed69"}</msg>
-<status status="PASS" starttime="20211210 11:13:50.845" endtime="20211210 11:13:51.624"/>
-</kw>
-<kw name="New Page" library="Browser">
-<arg>https://neer.stag.dev.luby.com.br/</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<msg timestamp="20211210 11:13:55.792" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
-<msg timestamp="20211210 11:13:55.793" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211210 11:13:51.624" endtime="20211210 11:13:55.793"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:50.845" endtime="20211210 11:13:55.793"/>
-</kw>
-<test id="s1-s3-t1" name="Login">
-<kw name="Login Admin" library="CadAdm">
-<kw name="Login With" library="LoginActions">
-<arg>admin@email.com</arg>
-<arg>12345678</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:55.803" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:13:55.803" endtime="20211210 11:13:55.843"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:13:55.844" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:13:55.843" endtime="20211210 11:13:55.871"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:13:55.871" endtime="20211210 11:13:57.478"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:55.802" endtime="20211210 11:13:57.478"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:55.802" endtime="20211210 11:13:57.478"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:13:57.654" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-12.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:13:57.479" endtime="20211210 11:13:57.655"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:57.479" endtime="20211210 11:13:57.655"/>
-</kw>
-<status status="PASS" starttime="20211210 11:13:55.793" endtime="20211210 11:13:57.656"/>
-</test>
-<test id="s1-s3-t2" name="Atualizar CadAdm">
-<kw name="Go To ListagemAdm" library="ListagemActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:07.844" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-6.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:07.845" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:13:57.680" endtime="20211210 11:14:07.845"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:07.846" endtime="20211210 11:14:07.846"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Administradores</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:07.846" endtime="20211210 11:14:07.846"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:13:57.680" endtime="20211210 11:14:07.846"/>
-</kw>
-<kw name="Edit Adm" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:07.847" endtime="20211210 11:14:07.847"/>
-</kw>
-<kw name="Alert Atualizado com sucesso" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:14:07.848" endtime="20211210 11:14:07.848"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:07.980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-13.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:07.849" endtime="20211210 11:14:07.980"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:07.849" endtime="20211210 11:14:07.981"/>
-</kw>
-<tag>AtualizaAdm</tag>
-<status status="FAIL" starttime="20211210 11:13:57.664" endtime="20211210 11:14:07.982">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t3" name="Atualizar CadLojista">
-<kw name="Login Admin" library="CadAdm">
-<kw name="Login With" library="LoginActions">
-<arg>admin@email.com</arg>
-<arg>12345678</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:07.993" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:14:07.993" endtime="20211210 11:14:08.016"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:08.017" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:14:08.017" endtime="20211210 11:14:08.049"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211210 11:14:08.049" endtime="20211210 11:14:08.128"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:07.992" endtime="20211210 11:14:08.129"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:07.992" endtime="20211210 11:14:08.129"/>
-</kw>
-<kw name="Go To ListagemLojista" library="ListagemActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:18.267" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-7.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:18.268" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:08.130" endtime="20211210 11:14:18.268"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:18.268" endtime="20211210 11:14:18.268"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:18.268" endtime="20211210 11:14:18.268"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:08.129" endtime="20211210 11:14:18.269"/>
-</kw>
-<kw name="Edit Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:18.270" endtime="20211210 11:14:18.270"/>
-</kw>
-<kw name="Alert Atualizado com sucesso" library="AlertMessage">
-<status status="NOT RUN" starttime="20211210 11:14:18.271" endtime="20211210 11:14:18.271"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:18.379" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-14.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:18.271" endtime="20211210 11:14:18.380"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:18.271" endtime="20211210 11:14:18.380"/>
-</kw>
-<tag>AtualizaLojista</tag>
-<status status="FAIL" starttime="20211210 11:14:07.989" endtime="20211210 11:14:18.381">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t4" name="Recupera Senha Admin">
-<kw name="Go To ListagemAdm" library="ListagemActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:28.554" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-8.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:28.556" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:18.390" endtime="20211210 11:14:28.556"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administradores</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:28.557" endtime="20211210 11:14:28.557"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Administradores</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:28.558" endtime="20211210 11:14:28.558"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:18.390" endtime="20211210 11:14:28.558"/>
-</kw>
-<kw name="Go To Recupera Senha Admin" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:28.559" endtime="20211210 11:14:28.559"/>
-</kw>
-<kw name="Recupera Senha" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:28.560" endtime="20211210 11:14:28.560"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:28.676" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-15.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:28.561" endtime="20211210 11:14:28.676"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:28.561" endtime="20211210 11:14:28.677"/>
-</kw>
-<tag>RecuperaSenhaAdmin</tag>
-<status status="FAIL" starttime="20211210 11:14:18.386" endtime="20211210 11:14:28.677">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t5" name="Recupera Senha Lojista">
-<kw name="Go To ListagemLojista" library="ListagemActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:38.802" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-9.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:38.803" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:28.687" endtime="20211210 11:14:38.803"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:38.803" endtime="20211210 11:14:38.804"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:38.804" endtime="20211210 11:14:38.804"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:28.686" endtime="20211210 11:14:38.804"/>
-</kw>
-<kw name="Go To Recupera Senha Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:38.805" endtime="20211210 11:14:38.805"/>
-</kw>
-<kw name="Recupera Senha" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:38.806" endtime="20211210 11:14:38.806"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:38.914" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-16.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:38.807" endtime="20211210 11:14:38.914"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:38.807" endtime="20211210 11:14:38.914"/>
-</kw>
-<tag>RecuperaSenhaLojista</tag>
-<status status="FAIL" starttime="20211210 11:14:28.683" endtime="20211210 11:14:38.916">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t6" name="Delete Admin">
-<kw name="Go To Admin" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:49.112" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-10.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:49.113" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:38.940" endtime="20211210 11:14:49.113"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Administrador</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:49.113" endtime="20211210 11:14:49.113"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Administradores</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:49.113" endtime="20211210 11:14:49.113"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:38.940" endtime="20211210 11:14:49.114"/>
-</kw>
-<kw name="Delete Admin" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:49.115" endtime="20211210 11:14:49.115"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:49.226" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-17.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:49.116" endtime="20211210 11:14:49.226"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:49.116" endtime="20211210 11:14:49.227"/>
-</kw>
-<tag>deleteadmin</tag>
-<status status="FAIL" starttime="20211210 11:14:38.923" endtime="20211210 11:14:49.228">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t7" name="Delete Lojista">
-<kw name="Go To Lojista" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:14:59.397" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-11.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:14:59.398" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:49.238" endtime="20211210 11:14:59.398"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:59.398" endtime="20211210 11:14:59.398"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:14:59.399" endtime="20211210 11:14:59.399"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:49.238" endtime="20211210 11:14:59.399"/>
-</kw>
-<kw name="Delete Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:14:59.400" endtime="20211210 11:14:59.400"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:14:59.521" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-18.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:14:59.401" endtime="20211210 11:14:59.522"/>
-</kw>
-<status status="PASS" starttime="20211210 11:14:59.401" endtime="20211210 11:14:59.522"/>
-</kw>
-<tag>deletelojista</tag>
-<status status="FAIL" starttime="20211210 11:14:49.234" endtime="20211210 11:14:59.523">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t8" name="Bloquear Lojista">
-<kw name="Go To Lojista" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:09.666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-12.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:15:09.666" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:14:59.533" endtime="20211210 11:15:09.666"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:09.667" endtime="20211210 11:15:09.667"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:09.667" endtime="20211210 11:15:09.667"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:14:59.533" endtime="20211210 11:15:09.668"/>
-</kw>
-<kw name="Bloquear Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:15:09.669" endtime="20211210 11:15:09.669"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:09.819" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-19.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:15:09.670" endtime="20211210 11:15:09.819"/>
-</kw>
-<status status="PASS" starttime="20211210 11:15:09.669" endtime="20211210 11:15:09.820"/>
-</kw>
-<tag>bloquearlojista</tag>
-<status status="FAIL" starttime="20211210 11:14:59.528" endtime="20211210 11:15:09.821">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t9" name="Desbloquear Lojista">
-<kw name="Go To Lojista" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:19.976" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-13.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:15:19.977" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:15:09.833" endtime="20211210 11:15:19.977"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:19.978" endtime="20211210 11:15:19.978"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:19.978" endtime="20211210 11:15:19.978"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:09.833" endtime="20211210 11:15:19.978"/>
-</kw>
-<kw name="Desbloquear Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:15:19.979" endtime="20211210 11:15:19.979"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:20.089" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-20.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:15:19.980" endtime="20211210 11:15:20.089"/>
-</kw>
-<status status="PASS" starttime="20211210 11:15:19.980" endtime="20211210 11:15:20.089"/>
-</kw>
-<tag>desbloquearlojista</tag>
-<status status="FAIL" starttime="20211210 11:15:09.828" endtime="20211210 11:15:20.089">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t10" name="Assumir Lojista">
-<kw name="Go To Lojista" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:30.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-14.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:15:30.239" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:15:20.101" endtime="20211210 11:15:30.239"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:30.239" endtime="20211210 11:15:30.239"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:30.239" endtime="20211210 11:15:30.239"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:20.101" endtime="20211210 11:15:30.240"/>
-</kw>
-<kw name="Assumir Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:15:30.241" endtime="20211210 11:15:30.241"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:30.348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-21.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:15:30.241" endtime="20211210 11:15:30.349"/>
-</kw>
-<status status="PASS" starttime="20211210 11:15:30.241" endtime="20211210 11:15:30.349"/>
-</kw>
-<tag>visaoLojista</tag>
-<status status="FAIL" starttime="20211210 11:15:20.098" endtime="20211210 11:15:30.350">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<test id="s1-s3-t11" name="Voltar Visao Adm">
-<kw name="Go To Lojista" library="AtualizaActions">
-<kw name="Click" library="Browser">
-<arg>text=Usuários</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:40.496" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-15.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211210 11:15:40.497" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</msg>
-<status status="FAIL" starttime="20211210 11:15:30.362" endtime="20211210 11:15:40.497"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Gerenciar Lojistas</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:40.497" endtime="20211210 11:15:40.497"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>text=Lojistas</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:40.497" endtime="20211210 11:15:40.497"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:30.361" endtime="20211210 11:15:40.498"/>
-</kw>
-<kw name="Assumir Lojista" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:15:40.499" endtime="20211210 11:15:40.499"/>
-</kw>
-<kw name="Visao Admin" library="AtualizaActions">
-<status status="NOT RUN" starttime="20211210 11:15:40.499" endtime="20211210 11:15:40.499"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:40.632" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-22.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211210 11:15:40.500" endtime="20211210 11:15:40.632"/>
-</kw>
-<status status="PASS" starttime="20211210 11:15:40.500" endtime="20211210 11:15:40.632"/>
-</kw>
-<tag>visaoadm</tag>
-<status status="FAIL" starttime="20211210 11:15:30.358" endtime="20211210 11:15:40.633">TimeoutError: locator.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "text=Usuários"
-============================================================</status>
-</test>
-<doc>Cadastro Cliente Teste</doc>
-<status status="FAIL" starttime="20211210 11:13:50.817" endtime="20211210 11:15:40.639"/>
-</suite>
-<suite id="s1-s4" name="4.CadastroLojistaTests" source="C:\Luby\NeerHouse\QA\frontend\tests\4.CadastroLojistaTests.robot">
-<kw name="Start Session" library="Base" type="SETUP">
-<kw name="New Browser" library="Browser">
-<arg>chromium</arg>
-<arg>False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211210 11:15:40.734" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\e01e3777-317d-4ee0-9ed8-8b65cd3d4a5d"}</msg>
-<msg timestamp="20211210 11:15:41.221" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\e01e3777-317d-4ee0-9ed8-8b65cd3d4a5d"}</msg>
-<status status="PASS" starttime="20211210 11:15:40.732" endtime="20211210 11:15:41.221"/>
-</kw>
-<kw name="New Page" library="Browser">
-<arg>https://neer.stag.dev.luby.com.br/</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<msg timestamp="20211210 11:15:45.396" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
-<msg timestamp="20211210 11:15:45.396" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211210 11:15:41.222" endtime="20211210 11:15:45.397"/>
-</kw>
-<status status="PASS" starttime="20211210 11:15:40.730" endtime="20211210 11:15:45.397"/>
-</kw>
-<test id="s1-s4-t1" name="Login admin">
-<kw name="Login Admin" library="CadAdm">
-<kw name="Login With" library="LoginActions">
-<arg>admin@email.com</arg>
-<arg>12345678</arg>
-<kw name="Fill Text" library="Browser">
-<arg>id=email</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:45.418" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:15:45.417" endtime="20211210 11:15:45.464"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>id=password</arg>
-<arg>${pass}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:45.465" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211210 11:15:45.464" endtime="20211210 11:15:45.496"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>text=Entrar</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211210 11:15:47.124" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
-<msg timestamp="20211210 11:15:47.126" level="FAIL">Execution terminated by signal</msg>
-<status status="FAIL" starttime="20211210 11:15:45.497" endtime="20211210 11:15:47.126"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:45.417" endtime="20211210 11:15:47.127"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:45.416" endtime="20211210 11:15:47.128"/>
-</kw>
-<kw name="Finish Test" library="Base" type="TEARDOWN">
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:47.146" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
-<msg timestamp="20211210 11:15:47.381" level="FAIL">Error: page.screenshot: Target page, context or browser has been closed</msg>
-<status status="FAIL" starttime="20211210 11:15:47.130" endtime="20211210 11:15:47.381"/>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:47.130" endtime="20211210 11:15:47.381">Error: page.screenshot: Target page, context or browser has been closed</status>
-</kw>
-<status status="FAIL" starttime="20211210 11:15:45.397" endtime="20211210 11:15:47.386">Execution terminated by signal
-
-Also teardown failed:
-Error: page.screenshot: Target page, context or browser has been closed</status>
-</test>
-<test id="s1-s4-t2" name="Cadastro Lojista Sucesso Obrigatorio">
+<test id="s1-s1-t1" name="Cadastro Lojista Sucesso Obrigatorio">
 <kw name="Get DadosCad" library="Helpers">
 <var>${DadosCad}</var>
 <arg>CadLojista</arg>
@@ -1615,299 +32,278 @@ Error: page.screenshot: Target page, context or browser has been closed</status>
 <var>${fixture}</var>
 <arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
 <doc>Returns the contents of a specified file.</doc>
-<status status="FAIL" starttime="20211210 11:15:47.399" endtime="20211210 11:15:47.399"/>
+<msg timestamp="20211215 17:19:58.440" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211215 17:19:58.441" level="INFO">${fixture} = {   
+    "Adm1": {
+        "email": "emailteste10@teste.com"
+        },
+
+    "EmailBranco": {
+        "email": ""
+    },
+
+    "Vazio": {
+        "email": ""
+    },
+
+    "PermissaoBranco":{
+        "em...</msg>
+<status status="PASS" starttime="20211215 17:19:58.440" endtime="20211215 17:19:58.441"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${json}</var>
 <arg>json.loads($fixture)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:47.399" endtime="20211210 11:15:47.399"/>
+<msg timestamp="20211215 17:19:58.444" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
+<status status="PASS" starttime="20211215 17:19:58.441" endtime="20211215 17:19:58.444"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${select_DadosCad}</var>
 <arg>${json}[${DadosCad}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:47.399" endtime="20211210 11:15:47.399"/>
+<msg timestamp="20211215 17:19:58.445" level="INFO">${select_DadosCad} = {'nome': 'Loja1', 'email': 'lojista@email.com', 'phone': '43999999999', 'CPFCNPJ': '29476736000112', 'fantasia': 'loja1', 'cep': '57039815', 'logradouro': 'teste', 'numero': '123', 'bairro': 'CEntro',...</msg>
+<status status="PASS" starttime="20211215 17:19:58.444" endtime="20211215 17:19:58.445"/>
 </kw>
-<status status="FAIL" starttime="20211210 11:15:47.398" endtime="20211210 11:15:47.400"/>
+<msg timestamp="20211215 17:19:58.445" level="INFO">${DadosCad} = {'nome': 'Loja1', 'email': 'lojista@email.com', 'phone': '43999999999', 'CPFCNPJ': '29476736000112', 'fantasia': 'loja1', 'cep': '57039815', 'logradouro': 'teste', 'numero': '123', 'bairro': 'CEntro',...</msg>
+<status status="PASS" starttime="20211215 17:19:58.439" endtime="20211215 17:19:58.445"/>
+</kw>
+<kw name="Login Admin" library="CadAdm">
+<kw name="Login With" library="LoginActions">
+<arg>admin@email.com</arg>
+<arg>12345678</arg>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:19:58.447" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:19:58.447" endtime="20211215 17:19:58.501"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${pass}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:19:58.502" level="INFO">Fills the text '12345678' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:19:58.501" endtime="20211215 17:19:58.535"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:19:58.535" endtime="20211215 17:20:00.131"/>
+</kw>
+<status status="PASS" starttime="20211215 17:19:58.446" endtime="20211215 17:20:00.131"/>
+</kw>
+<status status="PASS" starttime="20211215 17:19:58.446" endtime="20211215 17:20:00.131"/>
 </kw>
 <kw name="Go To CadLojista" library="CadLojista">
-<status status="NOT RUN" starttime="20211210 11:15:47.403" endtime="20211210 11:15:47.403"/>
+<kw name="Click" library="Browser">
+<arg>text=Usuários</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:20:00.132" endtime="20211215 17:20:01.650"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Gerenciar Lojistas</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:20:01.650" endtime="20211215 17:20:01.754"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:20:01.754" endtime="20211215 17:20:02.155"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>text="Cadastrar Lojista"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:20:02.155" endtime="20211215 17:20:02.428"/>
+</kw>
+<status status="PASS" starttime="20211215 17:20:00.132" endtime="20211215 17:20:02.428"/>
 </kw>
 <kw name="Submit Form CadLojista" library="CadLojista">
 <arg>${DadosCad}</arg>
-<status status="NOT RUN" starttime="20211210 11:15:47.403" endtime="20211210 11:15:47.403"/>
+<kw name="Fill Text" library="Browser">
+<arg>id=name</arg>
+<arg>${DadosCad}[nome]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.429" level="INFO">Fills the text 'Loja1' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.429" endtime="20211215 17:20:02.455"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${DadosCad}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.456" level="INFO">Fills the text 'lojista@email.com' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.455" endtime="20211215 17:20:02.484"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>xpath=//*[@id="root"]/main/div/main/div/div/form/div[3]/div[2]/div[1]/div/input</arg>
+<arg>${DadosCad}[phone]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.484" level="INFO">Fills the text '43999999999' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.484" endtime="20211215 17:20:02.532"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=doc</arg>
+<arg>${DadosCad}[CPFCNPJ]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.532" level="INFO">Fills the text '29476736000112' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.532" endtime="20211215 17:20:02.584"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=tradingName</arg>
+<arg>${DadosCad}[fantasia]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.585" level="INFO">Fills the text 'loja1' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.585" endtime="20211215 17:20:02.626"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>xpath=//*[@id="root"]/main/div/main/div/div/form/div[7]/div[2]/div[1]/div/input</arg>
+<arg>${DadosCad}[cep]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.627" level="INFO">Fills the text '57039815' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.626" endtime="20211215 17:20:02.671"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=address_street</arg>
+<arg>${DadosCad}[logradouro]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.672" level="INFO">Fills the text 'teste' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.672" endtime="20211215 17:20:02.707"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=address_number</arg>
+<arg>${DadosCad}[numero]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.708" level="INFO">Fills the text '123' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.707" endtime="20211215 17:20:02.746"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=address_city</arg>
+<arg>${DadosCad}[Cidade]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:02.747" level="INFO">Fills the text 'BOA' in the given field.</msg>
+<status status="PASS" starttime="20211215 17:20:02.746" endtime="20211215 17:20:02.785"/>
+</kw>
+<status status="PASS" starttime="20211215 17:20:02.428" endtime="20211215 17:20:02.785"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=address_country</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211215 17:20:02.786" endtime="20211215 17:20:02.982"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Brasil</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20211215 17:20:03.232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211215 17:20:03.234" level="FAIL">Error: locator.click: Error: strict mode violation: "text=Brasil" resolved to 2 elements:
+    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
+    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
+
+=========================== logs ===========================
+waiting for selector "text=Brasil"
+  strict mode violation: "text=Brasil" resolved to 2 elements:
+    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
+    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
+
+============================================================</msg>
+<status status="FAIL" starttime="20211215 17:20:02.983" endtime="20211215 17:20:03.234"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=address_state</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20211215 17:20:03.235" endtime="20211215 17:20:03.235"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=PR</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20211215 17:20:03.236" endtime="20211215 17:20:03.236"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=/html/body/div[1]/main/div/main/form/footer[2]/button[1]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211210 11:15:47.404" endtime="20211210 11:15:47.404"/>
+<status status="NOT RUN" starttime="20211215 17:20:03.237" endtime="20211215 17:20:03.237"/>
 </kw>
 <kw name="Finish Test" library="Base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211210 11:15:47.415" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
-<msg timestamp="20211210 11:15:47.417" level="FAIL">Error: page.screenshot: Target page, context or browser has been closed</msg>
-<status status="FAIL" starttime="20211210 11:15:47.405" endtime="20211210 11:15:47.418"/>
+<msg timestamp="20211215 17:20:03.405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211215 17:20:03.238" endtime="20211215 17:20:03.405"/>
 </kw>
-<status status="FAIL" starttime="20211210 11:15:47.404" endtime="20211210 11:15:47.418">Error: page.screenshot: Target page, context or browser has been closed</status>
+<status status="PASS" starttime="20211215 17:20:03.238" endtime="20211215 17:20:03.405"/>
 </kw>
 <tag>CadLojista</tag>
-<status status="FAIL" starttime="20211210 11:15:47.395" endtime="20211210 11:15:47.418">Execution terminated by signal
+<status status="FAIL" starttime="20211215 17:19:58.431" endtime="20211215 17:20:03.406">Error: locator.click: Error: strict mode violation: "text=Brasil" resolved to 2 elements:
+    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
+    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
 
-Also teardown failed:
-Error: page.screenshot: Target page, context or browser has been closed</status>
-</test>
-<test id="s1-s4-t3" name="Cadastro Lojista Sucesso Completo">
-<tag>CadLojistaCompleto</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.424" endtime="20211210 11:15:47.427">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s4-t4" name="Campos em branco">
-<tag>CadLojistaBranco</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.431" endtime="20211210 11:15:47.433">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s4-t5" name="Email Invalid">
-<tag>CadLojistaEmailInvalid</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.440" endtime="20211210 11:15:47.443">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s4-t6" name="Phone Invalid">
-<tag>CadLojistaPhoneInvalid</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.446" endtime="20211210 11:15:47.448">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s4-t7" name="Email em branco">
-<tag>CadLojistaEmailBranco</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.453" endtime="20211210 11:15:47.456">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s4-t8" name="Phone em branco">
-<tag>CadLojistaPhoneBranco</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.461" endtime="20211210 11:15:47.464">Test execution stopped due to a fatal error.</status>
+=========================== logs ===========================
+waiting for selector "text=Brasil"
+  strict mode violation: "text=Brasil" resolved to 2 elements:
+    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
+    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
+
+============================================================</status>
 </test>
 <doc>CADASTRO LOJISTA TESTS</doc>
-<status status="FAIL" starttime="20211210 11:15:40.709" endtime="20211210 11:15:47.468"/>
+<status status="FAIL" starttime="20211215 17:19:52.834" endtime="20211215 17:20:03.416"/>
 </suite>
-<suite id="s1-s5" name="5.CadastroClienteTests" source="C:\Luby\NeerHouse\QA\frontend\tests\5.CadastroClienteTests.robot">
-<test id="s1-s5-t1" name="Logar Adm">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.478" endtime="20211210 11:15:47.479">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t2" name="Cadastro Cliente Sucesso">
-<tag>CadCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.480" endtime="20211210 11:15:47.481">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t3" name="Cadastro Cliente Campos em branco">
-<tag>CadcliVazio</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.482" endtime="20211210 11:15:47.483">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t4" name="Cadastros Cliente CPF Incompleto">
-<tag>CadCliCPFIncompleto</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.484" endtime="20211210 11:15:47.485">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t5" name="Cadastro Cliente Email Invalido">
-<tag>CadCliEmailInvalido</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.488" endtime="20211210 11:15:47.488">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t6" name="Cadastro Cliente Data Incompleta">
-<tag>CadcliDataNasc</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.490" endtime="20211210 11:15:47.490">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s5-t7" name="Cadastros Cliente Telefone Incompleta">
-<tag>CadCliFoneIncompleto</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.492" endtime="20211210 11:15:47.492">Test execution stopped due to a fatal error.</status>
-</test>
-<doc>Cadastro Cliente Teste</doc>
-<status status="FAIL" starttime="20211210 11:15:47.477" endtime="20211210 11:15:47.494"/>
-</suite>
-<suite id="s1-s6" name="6.ListagemAdmTests" source="C:\Luby\NeerHouse\QA\frontend\tests\6.ListagemAdmTests.robot">
-<test id="s1-s6-t1" name="Logar">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.498" endtime="20211210 11:15:47.498">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s6-t2" name="Lista Vazia">
-<tag>ListavaziaADM</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.500" endtime="20211210 11:15:47.501">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s6-t3" name="Lista com Dados">
-<tag>ListaComDadosADM</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.503" endtime="20211210 11:15:47.504">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s6-t4" name="Lista com Filtro">
-<tag>ListaComFiltroADM</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.505" endtime="20211210 11:15:47.506">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s6-t5" name="Redireciona Cadastro">
-<tag>DirecionaCadastroADM</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.507" endtime="20211210 11:15:47.508">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s6-t6" name="Limpa Filtro">
-<tag>LimpaFiltroADM</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.509" endtime="20211210 11:15:47.510">Test execution stopped due to a fatal error.</status>
-</test>
-<doc>Cadastro Cliente Teste</doc>
-<status status="FAIL" starttime="20211210 11:15:47.496" endtime="20211210 11:15:47.512"/>
-</suite>
-<suite id="s1-s7" name="7.ListagemLojistaTests" source="C:\Luby\NeerHouse\QA\frontend\tests\7.ListagemLojistaTests.robot">
-<test id="s1-s7-t1" name="Logar">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.515" endtime="20211210 11:15:47.515">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s7-t2" name="Lista Vazia">
-<tag>ListavaziaLojista</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.516" endtime="20211210 11:15:47.517">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s7-t3" name="Lista com Dados">
-<tag>ListaComDadosLojista</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.518" endtime="20211210 11:15:47.520">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s7-t4" name="Lista com Filtro">
-<tag>ListaComFiltroLojista</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.522" endtime="20211210 11:15:47.523">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s7-t5" name="Redireciona Cadastro">
-<tag>DirecionaCadastroLojista</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.524" endtime="20211210 11:15:47.525">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s7-t6" name="Limpa Filtro">
-<tag>LimpaFiltroLojista</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.527" endtime="20211210 11:15:47.528">Test execution stopped due to a fatal error.</status>
-</test>
-<doc>Cadastro Cliente Teste</doc>
-<status status="FAIL" starttime="20211210 11:15:47.513" endtime="20211210 11:15:47.530"/>
-</suite>
-<suite id="s1-s8" name="8.ListagemClienteTests" source="C:\Luby\NeerHouse\QA\frontend\tests\8.ListagemClienteTests.robot">
-<test id="s1-s8-t1" name="Logar">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.533" endtime="20211210 11:15:47.533">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s8-t2" name="Lista Vazia">
-<tag>ListavaziaCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.535" endtime="20211210 11:15:47.537">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s8-t3" name="Lista com Dados">
-<tag>ListaComDadosCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.539" endtime="20211210 11:15:47.540">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s8-t4" name="Lista com Filtro">
-<tag>ListaComFiltroCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.541" endtime="20211210 11:15:47.542">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s8-t5" name="Redireciona Cadastro">
-<tag>DirecionaCadastroCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.544" endtime="20211210 11:15:47.544">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-s8-t6" name="Limpa Filtro">
-<tag>LimpaFiltroCliente</tag>
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20211210 11:15:47.545" endtime="20211210 11:15:47.546">Test execution stopped due to a fatal error.</status>
-</test>
-<doc>Cadastro Cliente Teste</doc>
-<status status="FAIL" starttime="20211210 11:15:47.532" endtime="20211210 11:15:47.548"/>
-</suite>
-<status status="FAIL" starttime="20211210 11:12:22.025" endtime="20211210 11:15:47.550"/>
+<status status="FAIL" starttime="20211215 17:19:52.807" endtime="20211215 17:20:03.488"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="48" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="7" fail="17" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
-<stat pass="0" fail="1" skip="0">AtualizaAdm</stat>
-<stat pass="0" fail="1" skip="0">AtualizaLojista</stat>
-<stat pass="0" fail="1" skip="0">bloquearlojista</stat>
-<stat pass="0" fail="1" skip="0">Cadastro</stat>
-<stat pass="0" fail="1" skip="0">CadBranco</stat>
-<stat pass="0" fail="1" skip="0">CadCliCPFIncompleto</stat>
-<stat pass="0" fail="1" skip="0">CadcliDataNasc</stat>
-<stat pass="0" fail="1" skip="0">CadCliEmailInvalido</stat>
-<stat pass="0" fail="1" skip="0">CadCliente</stat>
-<stat pass="0" fail="1" skip="0">CadCliFoneIncompleto</stat>
-<stat pass="0" fail="1" skip="0">CadcliVazio</stat>
 <stat pass="0" fail="1" skip="0">CadLojista</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaBranco</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaCompleto</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaEmailBranco</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaEmailInvalid</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaPhoneBranco</stat>
-<stat pass="0" fail="1" skip="0">CadLojistaPhoneInvalid</stat>
-<stat pass="1" fail="0" skip="0">CamposVazios</stat>
-<stat pass="0" fail="1" skip="0">deleteadmin</stat>
-<stat pass="0" fail="1" skip="0">deletelojista</stat>
-<stat pass="0" fail="1" skip="0">desbloquearlojista</stat>
-<stat pass="0" fail="1" skip="0">DirecionaCadastroADM</stat>
-<stat pass="0" fail="1" skip="0">DirecionaCadastroCliente</stat>
-<stat pass="0" fail="1" skip="0">DirecionaCadastroLojista</stat>
-<stat pass="1" fail="0" skip="0">EmailInvalido</stat>
-<stat pass="0" fail="1" skip="0">LimpaFiltroADM</stat>
-<stat pass="0" fail="1" skip="0">LimpaFiltroCliente</stat>
-<stat pass="0" fail="1" skip="0">LimpaFiltroLojista</stat>
-<stat pass="0" fail="1" skip="0">ListaComDadosADM</stat>
-<stat pass="0" fail="1" skip="0">ListaComDadosCliente</stat>
-<stat pass="0" fail="1" skip="0">ListaComDadosLojista</stat>
-<stat pass="0" fail="1" skip="0">ListaComFiltroADM</stat>
-<stat pass="0" fail="1" skip="0">ListaComFiltroCliente</stat>
-<stat pass="0" fail="1" skip="0">ListaComFiltroLojista</stat>
-<stat pass="0" fail="1" skip="0">ListavaziaADM</stat>
-<stat pass="0" fail="1" skip="0">ListavaziaCliente</stat>
-<stat pass="0" fail="1" skip="0">ListavaziaLojista</stat>
-<stat pass="1" fail="0" skip="0">loginsucesso</stat>
-<stat pass="1" fail="0" skip="0">LoginVazio</stat>
-<stat pass="0" fail="1" skip="0">MailBranco</stat>
-<stat pass="0" fail="1" skip="0">MailInvalid</stat>
-<stat pass="0" fail="1" skip="0">PermissionBranco</stat>
-<stat pass="0" fail="1" skip="0">RecuperaSenhaAdmin</stat>
-<stat pass="0" fail="1" skip="0">RecuperaSenhaLojista</stat>
-<stat pass="1" fail="0" skip="0">Senhaincorreta</stat>
-<stat pass="0" fail="1" skip="0">visaoadm</stat>
-<stat pass="0" fail="1" skip="0">visaoLojista</stat>
 </tag>
 <suite>
-<stat pass="7" fail="48" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1" name="1.LoginTests">Tests.1.LoginTests</stat>
-<stat pass="1" fail="5" skip="0" id="s1-s2" name="2.CadastrosAdminTests">Tests.2.CadastrosAdminTests</stat>
-<stat pass="1" fail="10" skip="0" id="s1-s3" name="3.AtualizaRecuperaTests">Tests.3.AtualizaRecuperaTests</stat>
-<stat pass="0" fail="8" skip="0" id="s1-s4" name="4.CadastroLojistaTests">Tests.4.CadastroLojistaTests</stat>
-<stat pass="0" fail="7" skip="0" id="s1-s5" name="5.CadastroClienteTests">Tests.5.CadastroClienteTests</stat>
-<stat pass="0" fail="6" skip="0" id="s1-s6" name="6.ListagemAdmTests">Tests.6.ListagemAdmTests</stat>
-<stat pass="0" fail="6" skip="0" id="s1-s7" name="7.ListagemLojistaTests">Tests.7.ListagemLojistaTests</stat>
-<stat pass="0" fail="6" skip="0" id="s1-s8" name="8.ListagemClienteTests">Tests.8.ListagemClienteTests</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="4.CadastroLojistaTests">Tests.4.CadastroLojistaTests</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211210 11:15:47.124" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
-<msg timestamp="20211210 11:15:47.146" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
-<msg timestamp="20211210 11:15:47.415" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: page.screenshot: Target page, context or browser has been closed</msg>
 </errors>
 </robot>

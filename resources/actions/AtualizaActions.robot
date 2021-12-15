@@ -23,7 +23,7 @@ Go To Cliente
 
 Edit Adm
 
-    Click    id=cell-4-3
+    Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[4]/div
     #Melhorar esse ponto
     Sleep    1 
     Click    text=Salvar
@@ -31,25 +31,25 @@ Edit Adm
 
 Edit Lojista
 
-    Click    id=cell-4-1
+    Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[4]/div
     Click    text=Salvar
 
-# Edit Cliente
+Edit Cliente
 
-#    Click    id=
-#    Click    text=Salvar
+   Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[7]/div
+   Click    text=Salvar
 
 Go To Recupera Senha Admin
 
-    Click    id=cell-4-3
+    Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[4]/div
 
 Go To Recupera Senha Lojista
 
-    Click    id=cell-4-1
+    Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[4]/div
 
-# Go To Recupera Senha Cliente
+Go To Recupera Senha Cliente
 
-#    Click    id=
+    Click    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[7]/div
 
 Recupera Senha
 
@@ -60,13 +60,13 @@ Recupera Senha
 
 
     Wait For Elements State    ${recover}    visible     5                      
-    Get Text                   ${recover}    contains    Enviada com sucesso
+    Get Text                   ${recover}    contains    recuperação de senha
 
 Delete Admin
 
     ${delete}    Set Variable    css=.ant-message
 
-    Click                      id=cell-4-29
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[4]/div
     Click                      text=Excluir
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
@@ -79,7 +79,7 @@ Delete Lojista
 
     ${delete}    Set Variable    css=.ant-message
 
-    Click                      id=cell-4-10
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[4]/td[4]/div
     Click                      text=Excluir
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
@@ -87,23 +87,23 @@ Delete Lojista
     Wait For Elements State    ${delete}    visible     5
     Get Text                   ${delete}    contains    sucesso
 
-# Delete Cliente
+Delete Cliente
 
-#    ${delete}    Set Variable    css=.ant-message
+    ${delete}    Set Variable    css=.ant-message
 
-#    Click                      id=cell-4-9
-#    Click                      text=Excluir
-#    Wait For Elements State    css=.ant-modal-content    visible    5
-#    Click                      text=Confirmar
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[7]/div
+    Click                      text=Excluir
+    Wait For Elements State    css=.ant-modal-content    visible    5
+    Click                      text=Confirmar
 
-#    Wait For Elements State    ${delete}    visible     5
-#    Get Text                   ${delete}    contains    sucesso
+    Wait For Elements State    ${delete}    visible     5
+    Get Text                   ${delete}    contains    sucesso
 
 Bloquear Lojista
 
     ${block}    Set Variable    css=.ant-message
 
-    Click                      id=cell-4-1
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[3]/td[4]/div
     Click                      text=Bloquear
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
@@ -115,7 +115,7 @@ Desbloquear Lojista
 
     ${Dblock}    Set Variable    css=.ant-message
 
-    Click                      id=cell-4-1
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[3]/td[4]/div
     Click                      text=Desbloquear
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
@@ -127,7 +127,7 @@ Assumir Lojista
 
     ${visao}    Set Variable    css=.ant-message
 
-    Click                      id=cell-5-1
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[3]/td[5]/div
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
 
@@ -136,10 +136,36 @@ Assumir Lojista
 
 Visao Admin
 
-    ${visao}    Set Variable    css=.ant-message
+    Click       xpath=//*[@id="root"]/main/div/main/header/div[2]
+    ${visao}    Set Variable    xpath=/html/body/div[3]/div/div
+    Get Text    ${visao}        contains        Lojista
 
-    Wait For Elements State    xpath=//*[@id="root"]/main/div/div               visible    5    Erro carregar DIV
-    Click                      xpath=/html/body/div[1]/main/div/div/div/span
+    Click       xpath=//*[@id="root"]/main/div/main/header/div[1]/div/button
 
-    Wait For Elements State    ${visao}    visible     5
-    Get Text                   ${visao}    contains    sua visão
+    Click       xpath=//*[@id="root"]/main/div/main/header/div[2]
+    ${adm}      Set Variable        xpath=/html/body/div[3]/div/div/ul
+    Get Text                   ${adm}    contains     Admin    
+
+Bloquear Cliente
+
+    ${block}    Set Variable    css=.ant-message
+
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[7]/div
+    Click                      text=Bloquear
+    Wait For Elements State    css=.ant-modal-content    visible    5
+    Click                      text=Confirmar
+
+    Wait For Elements State    ${block}    visible     5
+    Get Text                   ${block}    contains    bloqueado
+
+Desbloquear Cliente
+
+    ${block}    Set Variable    css=.ant-message
+
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[2]/td[7]/div
+    Click                      text=Desbloquear
+    Wait For Elements State    css=.ant-modal-content    visible    5
+    Click                      text=Confirmar
+
+    Wait For Elements State    ${block}    visible     5
+    Get Text                   ${block}    contains    desbloqueado

@@ -19,8 +19,16 @@
         "email": "emailinvalido@"
     },
     "CadLojista": {
+        "nome": "Loja1",
         "email":"lojista@email.com",
-        "phone":"43999999999"
+        "phone":"43999999999",
+        "CPFCNPJ": "29476736000112",
+        "fantasia": "loja1",
+        "cep": "57039815",
+        "logradouro":"teste",
+        "numero":"123",
+        "bairro":"CEntro",
+        "Cidade":"BOA"
     },
     "CadLojistaCompleto": {
         "email":"lojista@email.com",

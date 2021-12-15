@@ -22,18 +22,18 @@ Atualizar CadAdm
 Atualizar CadLojista
     [Tags]    AtualizaLojista
 
-    Login Admin
+    #Login Admin
     Go To ListagemLojista
     Edit Lojista
     Alert Atualizado com sucesso
 
-# Atualizar CadCliente
-#    [Tags]    AtualizaCliente
+Atualizar CadCliente
+    [Tags]    AtualizaCliente
 
-#    Login Admin
-#    Go To ListagemCliente
-#    Edit Cliente
-#    Alert Atualizado com sucesso
+    #Login Admin
+    Go To ListagemCliente
+    Edit Cliente
+    Alert Atualizado com sucesso
 
 Recupera Senha Admin
     [Tags]    RecuperaSenhaAdmin
@@ -52,13 +52,13 @@ Recupera Senha Lojista
     Go To Recupera Senha Lojista
     Recupera Senha
 
-# Recupera Senha Cliente
-#    [Tags]    RecuperaSenhaCliente
+Recupera Senha Cliente
+    [Tags]    RecuperaSenhaCliente
 
-#    #Login Admin
-#    Go To ListagemCliente
-#    Go To Recupera Senha Cliente
-#    Recupera Senha
+    #Login Admin
+    Go To ListagemCliente
+    Go To Recupera Senha Cliente
+    Recupera Senha
 
 Delete Admin
     [Tags]    deleteadmin
@@ -75,12 +75,12 @@ Delete Lojista
     Delete Lojista
 
 
-#Excluir Cliente
+Excluir Cliente
+    [Tags]      deletecliente
 
-
-    # Login Admin
-    # Go to Cliente
-    # Delete Cliente
+    #Login Admin
+    Go to Cliente
+    Delete Cliente
 
 Bloquear Lojista
     [Tags]    bloquearlojista
@@ -111,8 +111,19 @@ Voltar Visao Adm
     Assumir Lojista
     Visao Admin
 
+Bloquear Cliente
+    [Tags]  BloquearCLiente
 
-#Bloquear Cliente
-#Visao Lojista
+    #Login Admin
+    Go To Cliente
+    Bloquear Cliente
+
+Desbloquear Cliente
+    [Tags]  DesbloquearCliente
+
+    #Login Admin
+    Go To Cliente
+    Desbloquear Cliente
+
 
 

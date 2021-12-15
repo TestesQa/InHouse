@@ -13,18 +13,16 @@ Alert Text Shold Be
 
 Alert login Shold Be
 
-    ${element}                 Set Variable    css=input[error="email must be a valid email"] 
+    ${element}                 Set Variable    css=.ant-form-item-explain-error
     Wait For Elements State    ${element}      visible                                            10 
 
 Alert login Shold Be Required
 
-    ${element}                 Set Variable    css=input[error="email is a required field"] 
-    Wait For Elements State    ${element}      visible                                          10 
+    Wait For Elements State         text=Erro email na validação de campo       visible     10
 
 Alert password Shold Be Required
 
-    ${element}                 Set Variable    css=input[error="password is a required field"] 
-    Wait For Elements State    ${element}      visible                                             10
+    Wait For Elements State         text=Por favor, insira a senha!       visible     10
 
 Alert Form Null
     ${Name}        Set Variable    css=input[error*="informe o nome"]
@@ -39,6 +37,12 @@ Alert Form Null
     Wait For Elements State    ${DataNasc}    visible    10
     Wait For Elements State    ${Telefone}    visible    10
 
+Alert Erro
+    ${element}                 Set Variable          css=.ant-message 
+    Wait For Elements State    ${element}      visible                              10 
+    Get Text    ${element}      contains        Ocorreu um erro
+
+
 Alert CPF Incompleto
     ${CPF}    Set Variable    css=input[error*="11 digitos"]
 
@@ -51,19 +55,16 @@ Alert Telefone Incompleto
 
 Alert Email Shold Be
 
-    ${element}                 Set Variable    css=input[error*="email"] 
-    Wait For Elements State    ${element}      visible                              10 
+    Wait For Elements State         text=Por favor, insira E-mail       visible     10
 
 Alert Permission Shold Be Required
 
-    ${element}                 Set Variable    css=div[error*="opções"] 
-    Wait For Elements State    ${element}      visible                      10 
+    Wait For Elements State         text=Por favor, insira Permissão     visible     10
 
 Alert Invalid Email Shold Be
 
-    ${element}                 Set Variable    css=input[error*="email"] 
-    Wait For Elements State    ${element}      visible                              10 
-
+    Wait For Elements State         text=Por favor informe um email válido       visible     10
+    
 Alert Phone Shold Be
     ${element}                 Set Variable    css=input[error*="phone"]
     Wait For Elements State    ${element}      visible                         10

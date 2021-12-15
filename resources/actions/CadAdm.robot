@@ -11,7 +11,7 @@ Go To CadAdmin Form
 
     Click    text=Usuários
     Click    text=Gerenciar Administradores
-    Click    xpath=/html/body/div/main/div/main/div/div[1]/a/button
+    Click    text=Cadastrar
 
     Get Text    text="Cadastrar Administrador"
 
@@ -23,7 +23,7 @@ Submit CadastroAdm Form
     # Wait For    ${promise}
 
     Fill Text    id=email                                               ${DadosCad}[email]
-    Click        xpath=//*[@id="root"]/main/div/main/form/div/div/div[2]/span/div/div/span[2]
+    Click        xpath=//*[@id="root"]/main/div/main/div/div/form/div[2]/div[2]/div/div/div/div
     Click        text=Usuário Super Admin
     Click        text=Salvar
 

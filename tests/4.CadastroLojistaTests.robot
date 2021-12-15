@@ -17,10 +17,13 @@ Cadastro Lojista Sucesso Obrigatorio
     [Tags]         CadLojista
     ${DadosCad}    Get DadosCad    CadLojista
 
-    #Login Admin
+    Login Admin
     Go To CadLojista
     Submit Form CadLojista    ${DadosCad}
-    #Validar Cadastro
+    Click       id=address_country
+    Click       text=Brasil
+    Click       id=address_state
+    Click       text=PR
     Click                     xpath=/html/body/div[1]/main/div/main/form/footer[2]/button[1]
 
 Cadastro Lojista Sucesso Completo

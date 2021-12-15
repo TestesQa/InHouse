@@ -11,7 +11,7 @@ Login With
     Click        text=Entrar
 
 Do logout
-    Click    xpath=//*[@id="root"]/main/div/main/header/div
+    Click    xpath=//*[@id="root"]/main/div/main/header/div[2]/span
     Click    text=Sair
 
 User Shold Be Logged In
