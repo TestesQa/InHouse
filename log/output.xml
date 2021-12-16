@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.1 on win32)" generated="20211215 17:19:52.806" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.1 on win32)" generated="20211216 19:23:30.028" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Luby\NeerHouse\QA\frontend\tests">
 <suite id="s1-s1" name="4.CadastroLojistaTests" source="C:\Luby\NeerHouse\QA\frontend\tests\4.CadastroLojistaTests.robot">
 <kw name="Start Session" library="Base" type="SETUP">
@@ -9,31 +9,31 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211215 17:19:53.641" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\787e7248-a361-4bc2-8d8d-8e9670333097"}</msg>
-<msg timestamp="20211215 17:19:54.221" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\787e7248-a361-4bc2-8d8d-8e9670333097"}</msg>
-<status status="PASS" starttime="20211215 17:19:53.641" endtime="20211215 17:19:54.221"/>
+<msg timestamp="20211216 19:23:30.866" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\2fbda75b-6cf7-4edb-9421-c01d42aac480"}</msg>
+<msg timestamp="20211216 19:23:31.421" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Luby\\NeerHouse\\QA\\frontend\\log\\browser\\traces\\2fbda75b-6cf7-4edb-9421-c01d42aac480"}</msg>
+<status status="PASS" starttime="20211216 19:23:30.865" endtime="20211216 19:23:31.421"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://neer.stag.dev.luby.com.br/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20211215 17:19:58.431" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
-<msg timestamp="20211215 17:19:58.431" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211215 17:19:54.222" endtime="20211215 17:19:58.431"/>
+<msg timestamp="20211216 19:23:36.083" level="INFO">Successfully initialized new page object and opened url: https://neer.stag.dev.luby.com.br/</msg>
+<msg timestamp="20211216 19:23:36.083" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211216 19:23:31.422" endtime="20211216 19:23:36.083"/>
 </kw>
-<status status="PASS" starttime="20211215 17:19:53.641" endtime="20211215 17:19:58.431"/>
+<status status="PASS" starttime="20211216 19:23:30.865" endtime="20211216 19:23:36.084"/>
 </kw>
-<test id="s1-s1-t1" name="Cadastro Lojista Sucesso Obrigatorio">
+<test id="s1-s1-t1" name="Email em branco">
 <kw name="Get DadosCad" library="Helpers">
 <var>${DadosCad}</var>
-<arg>CadLojista</arg>
+<arg>CadLogistaEmailBranco</arg>
 <kw name="Get File" library="OperatingSystem">
 <var>${fixture}</var>
 <arg>${EXECDIR}/resources/fixtures/DadosCad.json</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211215 17:19:58.440" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211215 17:19:58.441" level="INFO">${fixture} = {   
+<msg timestamp="20211216 19:23:36.094" level="INFO" html="true">Getting file '&lt;a href="file://C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json"&gt;C:\Luby\NeerHouse\QA\frontend\resources\fixtures\DadosCad.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211216 19:23:36.094" level="INFO">${fixture} = {   
     "Adm1": {
         "email": "emailteste10@teste.com"
         },
@@ -48,25 +48,25 @@
 
     "PermissaoBranco":{
         "em...</msg>
-<status status="PASS" starttime="20211215 17:19:58.440" endtime="20211215 17:19:58.441"/>
+<status status="PASS" starttime="20211216 19:23:36.094" endtime="20211216 19:23:36.094"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${json}</var>
 <arg>json.loads($fixture)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211215 17:19:58.444" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
-<status status="PASS" starttime="20211215 17:19:58.441" endtime="20211215 17:19:58.444"/>
+<msg timestamp="20211216 19:23:36.099" level="INFO">${json} = {'Adm1': {'email': 'emailteste10@teste.com'}, 'EmailBranco': {'email': ''}, 'Vazio': {'email': ''}, 'PermissaoBranco': {'email': 'email2@email.com'}, 'EmailInvalido': {'email': 'emailinvalido@'}, 'Cad...</msg>
+<status status="PASS" starttime="20211216 19:23:36.095" endtime="20211216 19:23:36.099"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${select_DadosCad}</var>
 <arg>${json}[${DadosCad}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211215 17:19:58.445" level="INFO">${select_DadosCad} = {'nome': 'Loja1', 'email': 'lojista@email.com', 'phone': '43999999999', 'CPFCNPJ': '29476736000112', 'fantasia': 'loja1', 'cep': '57039815', 'logradouro': 'teste', 'numero': '123', 'bairro': 'CEntro',...</msg>
-<status status="PASS" starttime="20211215 17:19:58.444" endtime="20211215 17:19:58.445"/>
+<msg timestamp="20211216 19:23:36.099" level="INFO">${select_DadosCad} = {'nome': 'Loja4', 'email': '', 'phone': '43999999999', 'CPFCNPJ': '29451736000212', 'fantasia': 'loja4', 'cep': '72545-511', 'logradouro': 'Quadra SHIS QI 21 Conjunto', 'numero': '12', 'bairro': 'Seto...</msg>
+<status status="PASS" starttime="20211216 19:23:36.099" endtime="20211216 19:23:36.099"/>
 </kw>
-<msg timestamp="20211215 17:19:58.445" level="INFO">${DadosCad} = {'nome': 'Loja1', 'email': 'lojista@email.com', 'phone': '43999999999', 'CPFCNPJ': '29476736000112', 'fantasia': 'loja1', 'cep': '57039815', 'logradouro': 'teste', 'numero': '123', 'bairro': 'CEntro',...</msg>
-<status status="PASS" starttime="20211215 17:19:58.439" endtime="20211215 17:19:58.445"/>
+<msg timestamp="20211216 19:23:36.100" level="INFO">${DadosCad} = {'nome': 'Loja4', 'email': '', 'phone': '43999999999', 'CPFCNPJ': '29451736000212', 'fantasia': 'loja4', 'cep': '72545-511', 'logradouro': 'Quadra SHIS QI 21 Conjunto', 'numero': '12', 'bairro': 'Seto...</msg>
+<status status="PASS" starttime="20211216 19:23:36.093" endtime="20211216 19:23:36.100"/>
 </kw>
 <kw name="Login Admin" library="CadAdm">
 <kw name="Login With" library="LoginActions">
@@ -78,8 +78,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:19:58.447" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:19:58.447" endtime="20211215 17:19:58.501"/>
+<msg timestamp="20211216 19:23:36.102" level="INFO">Fills the text 'admin@email.com' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:36.101" endtime="20211216 19:23:36.155"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=password</arg>
@@ -87,19 +87,19 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:19:58.502" level="INFO">Fills the text '12345678' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:19:58.501" endtime="20211215 17:19:58.535"/>
+<msg timestamp="20211216 19:23:36.156" level="INFO">Fills the text '12345678' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:36.155" endtime="20211216 19:23:36.189"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Entrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:19:58.535" endtime="20211215 17:20:00.131"/>
+<status status="PASS" starttime="20211216 19:23:36.189" endtime="20211216 19:23:37.846"/>
 </kw>
-<status status="PASS" starttime="20211215 17:19:58.446" endtime="20211215 17:20:00.131"/>
+<status status="PASS" starttime="20211216 19:23:36.101" endtime="20211216 19:23:37.846"/>
 </kw>
-<status status="PASS" starttime="20211215 17:19:58.446" endtime="20211215 17:20:00.131"/>
+<status status="PASS" starttime="20211216 19:23:36.101" endtime="20211216 19:23:37.846"/>
 </kw>
 <kw name="Go To CadLojista" library="CadLojista">
 <kw name="Click" library="Browser">
@@ -107,21 +107,21 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:20:00.132" endtime="20211215 17:20:01.650"/>
+<status status="PASS" starttime="20211216 19:23:37.848" endtime="20211216 19:23:39.317"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Gerenciar Lojistas</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:20:01.650" endtime="20211215 17:20:01.754"/>
+<status status="PASS" starttime="20211216 19:23:39.317" endtime="20211216 19:23:39.412"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Cadastrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:20:01.754" endtime="20211215 17:20:02.155"/>
+<status status="PASS" starttime="20211216 19:23:39.413" endtime="20211216 19:23:40.003"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>text="Cadastrar Lojista"</arg>
@@ -129,9 +129,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:20:02.155" endtime="20211215 17:20:02.428"/>
+<status status="PASS" starttime="20211216 19:23:40.003" endtime="20211216 19:23:40.267"/>
 </kw>
-<status status="PASS" starttime="20211215 17:20:00.132" endtime="20211215 17:20:02.428"/>
+<status status="PASS" starttime="20211216 19:23:37.847" endtime="20211216 19:23:40.267"/>
 </kw>
 <kw name="Submit Form CadLojista" library="CadLojista">
 <arg>${DadosCad}</arg>
@@ -141,8 +141,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.429" level="INFO">Fills the text 'Loja1' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.429" endtime="20211215 17:20:02.455"/>
+<msg timestamp="20211216 19:23:40.269" level="INFO">Fills the text 'Loja4' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.268" endtime="20211216 19:23:40.300"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=email</arg>
@@ -150,8 +150,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.456" level="INFO">Fills the text 'lojista@email.com' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.455" endtime="20211215 17:20:02.484"/>
+<msg timestamp="20211216 19:23:40.300" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.300" endtime="20211216 19:23:40.320"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>xpath=//*[@id="root"]/main/div/main/div/div/form/div[3]/div[2]/div[1]/div/input</arg>
@@ -159,8 +159,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.484" level="INFO">Fills the text '43999999999' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.484" endtime="20211215 17:20:02.532"/>
+<msg timestamp="20211216 19:23:40.321" level="INFO">Fills the text '43999999999' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.320" endtime="20211216 19:23:40.367"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=doc</arg>
@@ -168,8 +168,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.532" level="INFO">Fills the text '29476736000112' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.532" endtime="20211215 17:20:02.584"/>
+<msg timestamp="20211216 19:23:40.368" level="INFO">Fills the text '29451736000212' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.367" endtime="20211216 19:23:40.417"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=tradingName</arg>
@@ -177,8 +177,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.585" level="INFO">Fills the text 'loja1' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.585" endtime="20211215 17:20:02.626"/>
+<msg timestamp="20211216 19:23:40.418" level="INFO">Fills the text 'loja4' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.418" endtime="20211216 19:23:40.454"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>xpath=//*[@id="root"]/main/div/main/div/div/form/div[7]/div[2]/div[1]/div/input</arg>
@@ -186,8 +186,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.627" level="INFO">Fills the text '57039815' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.626" endtime="20211215 17:20:02.671"/>
+<msg timestamp="20211216 19:23:40.455" level="INFO">Fills the text '72545-511' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.454" endtime="20211216 19:23:40.505"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=address_street</arg>
@@ -195,8 +195,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.672" level="INFO">Fills the text 'teste' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.672" endtime="20211215 17:20:02.707"/>
+<msg timestamp="20211216 19:23:40.506" level="INFO">Fills the text 'Quadra SHIS QI 21 Conjunto' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.505" endtime="20211216 19:23:40.551"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=address_number</arg>
@@ -204,104 +204,88 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.708" level="INFO">Fills the text '123' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.707" endtime="20211215 17:20:02.746"/>
+<msg timestamp="20211216 19:23:40.551" level="INFO">Fills the text '12' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.551" endtime="20211216 19:23:40.589"/>
 </kw>
 <kw name="Fill Text" library="Browser">
-<arg>id=address_city</arg>
-<arg>${DadosCad}[Cidade]</arg>
+<arg>id=address_district</arg>
+<arg>${DadosCad}[bairro]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:02.747" level="INFO">Fills the text 'BOA' in the given field.</msg>
-<status status="PASS" starttime="20211215 17:20:02.746" endtime="20211215 17:20:02.785"/>
-</kw>
-<status status="PASS" starttime="20211215 17:20:02.428" endtime="20211215 17:20:02.785"/>
+<msg timestamp="20211216 19:23:40.590" level="INFO">Fills the text 'Setor de Habitações Individuais Sul' in the given field.</msg>
+<status status="PASS" starttime="20211216 19:23:40.590" endtime="20211216 19:23:40.626"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=address_country</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211215 17:20:02.786" endtime="20211215 17:20:02.982"/>
+<status status="PASS" starttime="20211216 19:23:40.627" endtime="20211216 19:23:40.813"/>
 </kw>
 <kw name="Click" library="Browser">
-<arg>text=Brasil</arg>
+<arg>css=div[title=Brasil]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20211215 17:20:03.232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211215 17:20:03.234" level="FAIL">Error: locator.click: Error: strict mode violation: "text=Brasil" resolved to 2 elements:
-    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
-    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
-
-=========================== logs ===========================
-waiting for selector "text=Brasil"
-  strict mode violation: "text=Brasil" resolved to 2 elements:
-    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
-    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
-
-============================================================</msg>
-<status status="FAIL" starttime="20211215 17:20:02.983" endtime="20211215 17:20:03.234"/>
+<status status="PASS" starttime="20211216 19:23:40.814" endtime="20211216 19:23:41.073"/>
 </kw>
 <kw name="Click" library="Browser">
-<arg>id=address_state</arg>
+<arg>text=Salvar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211215 17:20:03.235" endtime="20211215 17:20:03.235"/>
+<status status="PASS" starttime="20211216 19:23:41.073" endtime="20211216 19:23:41.159"/>
+</kw>
+<status status="PASS" starttime="20211216 19:23:40.268" endtime="20211216 19:23:41.159"/>
 </kw>
 <kw name="Click" library="Browser">
-<arg>text=PR</arg>
+<arg>text=Salvar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211215 17:20:03.236" endtime="20211215 17:20:03.236"/>
+<status status="PASS" starttime="20211216 19:23:41.160" endtime="20211216 19:23:41.269"/>
 </kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div[1]/main/div/main/form/footer[2]/button[1]</arg>
+<kw name="Alert Email Shold Be" library="AlertMessage">
+<kw name="Wait For Elements State" library="Browser">
+<arg>text=Por favor, insira E-mail</arg>
+<arg>visible</arg>
+<arg>10</arg>
 <tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211215 17:20:03.237" endtime="20211215 17:20:03.237"/>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211216 19:23:41.299" level="INFO">Waited for Element with selector text=Por favor, insira E-mail at state visible</msg>
+<status status="PASS" starttime="20211216 19:23:41.270" endtime="20211216 19:23:41.299"/>
+</kw>
+<status status="PASS" starttime="20211216 19:23:41.269" endtime="20211216 19:23:41.299"/>
 </kw>
 <kw name="Finish Test" library="Base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211215 17:20:03.405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211215 17:20:03.238" endtime="20211215 17:20:03.405"/>
+<msg timestamp="20211216 19:23:41.475" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211216 19:23:41.300" endtime="20211216 19:23:41.476"/>
 </kw>
-<status status="PASS" starttime="20211215 17:20:03.238" endtime="20211215 17:20:03.405"/>
+<status status="PASS" starttime="20211216 19:23:41.300" endtime="20211216 19:23:41.476"/>
 </kw>
-<tag>CadLojista</tag>
-<status status="FAIL" starttime="20211215 17:19:58.431" endtime="20211215 17:20:03.406">Error: locator.click: Error: strict mode violation: "text=Brasil" resolved to 2 elements:
-    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
-    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
-
-=========================== logs ===========================
-waiting for selector "text=Brasil"
-  strict mode violation: "text=Brasil" resolved to 2 elements:
-    1) &lt;div role="option" aria-label="Brasil" aria-selected=…&gt;Brasil&lt;/div&gt; aka playwright.$("text=Brasil")
-    2) &lt;div class="ant-select-item-option-content"&gt;Brasil&lt;/div&gt; aka playwright.$(":nth-match(:text("Brasil"), 2)")
-
-============================================================</status>
+<tag>CadLojistaEmailBranco</tag>
+<status status="PASS" starttime="20211216 19:23:36.084" endtime="20211216 19:23:41.477"/>
 </test>
 <doc>CADASTRO LOJISTA TESTS</doc>
-<status status="FAIL" starttime="20211215 17:19:52.834" endtime="20211215 17:20:03.416"/>
+<status status="PASS" starttime="20211216 19:23:30.057" endtime="20211216 19:23:41.484"/>
 </suite>
-<status status="FAIL" starttime="20211215 17:19:52.807" endtime="20211215 17:20:03.488"/>
+<status status="PASS" starttime="20211216 19:23:30.030" endtime="20211216 19:23:41.563"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">CadLojista</stat>
+<stat pass="1" fail="0" skip="0">CadLojistaEmailBranco</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="4.CadastroLojistaTests">Tests.4.CadastroLojistaTests</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="4.CadastroLojistaTests">Tests.4.CadastroLojistaTests</stat>
 </suite>
 </statistics>
 <errors>

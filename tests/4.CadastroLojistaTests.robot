@@ -17,14 +17,10 @@ Cadastro Lojista Sucesso Obrigatorio
     [Tags]         CadLojista
     ${DadosCad}    Get DadosCad    CadLojista
 
-    Login Admin
+    #Login Admin
     Go To CadLojista
     Submit Form CadLojista    ${DadosCad}
-    Click       id=address_country
-    Click       text=Brasil
-    Click       id=address_state
-    Click       text=PR
-    Click                     xpath=/html/body/div[1]/main/div/main/form/footer[2]/button[1]
+    Alert Cadastro com sucesso
 
 Cadastro Lojista Sucesso Completo
 
@@ -34,21 +30,17 @@ Cadastro Lojista Sucesso Completo
 
     #Login Admin
     Go To CadLojista
-    Dados Adicionais
+    #Dados Adicionais
     Submit Form CadLojistaCompleto    ${DadosCad}
-    Click                             xpath=/html/body/div[1]/main/div/main/form/footer[2]/button[1]
+    Alert Cadastro com sucesso
 
 Campos em branco
     [Tags]    CadLojistaBranco
 
-    ${DadosCad}    Get DadosCad    CadLogistaBranco
-
     #Login Admin
     Go To CadLojista
-    Submit Form CadLojista    ${DadosCad}
     Click                     text=Salvar
-    Alert Email Shold Be
-    Alert Phone Shold Be
+    Alert Form Null
 
 Email Invalid
     [Tags]    CadLojistaEmailInvalid
@@ -59,19 +51,18 @@ Email Invalid
     Go To CadLojista
     Submit Form CadLojista    ${DadosCad}
     Click                     text=Salvar
-    Alert Email Shold Be
+    Alert Invalid Email Shold Be
 
 Phone Invalid
     [Tags]    CadLojistaPhoneInvalid
 
-    ${DadosCad}    Get DadosCad    CadLogistaPhoneBranco
+    ${DadosCad}    Get DadosCad    CadLogistaPhoneInvalid
 
-     #Login Admin
+    #Login Admin
     Go To CadLojista
     Submit Form CadLojista    ${DadosCad}
     Click                     text=Salvar
-    Alert Phone Shold Be
-
+    Alert Phone Invalid Shold Be
 Email em branco
     [Tags]    CadLojistaEmailBranco
 

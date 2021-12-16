@@ -19,46 +19,75 @@
         "email": "emailinvalido@"
     },
     "CadLojista": {
-        "nome": "Loja1",
-        "email":"lojista@email.com",
+        "nome": "Loja4",
+        "email":"lojista4@email.com",
         "phone":"43999999999",
-        "CPFCNPJ": "29476736000112",
-        "fantasia": "loja1",
-        "cep": "57039815",
-        "logradouro":"teste",
-        "numero":"123",
-        "bairro":"CEntro",
-        "Cidade":"BOA"
+        "CPFCNPJ": "29451736000212",
+        "fantasia": "loja4",
+        "cep": "72545-511",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLojistaCompleto": {
-        "email":"lojista@email.com",
+        "nome": "Loja5",
+        "email":"lojista5@email.com",
         "phone":"43999999999",
-        "name": "Nome Teste",
-        "doc": "06665666987",
-        "banco":"",
-        "agencia":"xxxx",
-        "conta":"0000",
-        "pix":""
-    },
-    "CadLogistaBranco":{
-        "email":"",
-        "phone":""
+        "CPFCNPJ": "29451036000112",
+        "fantasia": "loja5",
+        "cep": "29055-055",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul",
+        "pix":"02145478850",
+        "agencia":"12334",
+        "conta":"123548",
+        "estadual":"1275454245",
+        "municipal":"193456789"
     },
     "CadLogistaEmailInvalid":{
-        "email":"tstes@",
-        "phone":"44988565547"
+        "nome": "Loja4",
+        "email":"TEst.@",
+        "phone":"43999999999",
+        "CPFCNPJ": "29451736000212",
+        "fantasia": "loja4",
+        "cep": "72545-511",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLogistaPhoneInvalid":{
-        "email":"tstes@gmail.com",
-        "phone":"449885"
+        "nome": "Loja4",
+        "email":"lojista4@email.com",
+        "phone":"4399999",
+        "CPFCNPJ": "29451736000212",
+        "fantasia": "loja4",
+        "cep": "72545-511",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLogistaEmailBranco":{
+        "nome": "Loja4",
         "email":"",
-        "phone":"44988565547"
+        "phone":"43999999999",
+        "CPFCNPJ": "29451736000212",
+        "fantasia": "loja4",
+        "cep": "72545-511",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLogistaPhoneBranco":{
-        "email":"tstes@ito.com",
-        "phone":""
+        "nome": "Loja4",
+        "email":"lojista4@email.com",
+        "phone":"",
+        "CPFCNPJ": "29451736000212",
+        "fantasia": "loja4",
+        "cep": "72545-511",
+        "logradouro":"Quadra SHIS QI 21 Conjunto",
+        "numero":"12",
+        "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadClienteCompleto":{
         "Name": "Jõao da Silva",
