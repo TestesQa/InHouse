@@ -40,21 +40,21 @@ List Null Cliente
     Get Text                   ${nullList}    equal      ${null}
 
 Lista com Dados ADM
-    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${nullList}    Set Variable    xpath=//*[@id="root"]/main/div/main/div/div/div[3]/div
     ${null}        Set Variable    A pesquisa retornou 0 administradore(s)
 
     Wait For Elements State    ${nullList}    visible    5          Login error
     Get Text                   ${nullList}    inequal    ${null}
 
 Lista com Dados Lojista
-    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${nullList}    Set Variable    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div
     ${null}        Set Variable    A pesquisa retornou 0 lojista(s)
 
     Wait For Elements State    ${nullList}    visible    5          Login error
     Get Text                   ${nullList}    inequal    ${null}
 
 Lista com Dados Cliente
-    ${nullList}    Set Variable    xpath=/html/body/div[1]/main/div/main/div/span
+    ${nullList}    Set Variable    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div
     ${null}        Set Variable    A pesquisa retornou 0 cliente(s)
 
     Wait For Elements State    ${nullList}    visible    5          Login error
@@ -70,7 +70,7 @@ Go to CadastroLojista
 
 Go to CadastroCli
     Click       text=Cadastrar
-    Get Text    text=Cadastrar Clientes
+    Get Text    text=Cadastrar Cliente
 
 Clear Filtro
     Click       text=Limpar
@@ -81,7 +81,6 @@ Fill FiltroADM
     [Arguments]    ${DadosCad}
 
     Fill Text    id=email    ${DadosCad}[email]
-    #Fill Text       Permissão
 
     Get Text    id=email    inequal    ${EMPTY}
 
@@ -90,7 +89,7 @@ Fill FiltroLojista
 
     Fill Text    id=name     ${DadosCad}[name]
     Fill Text    id=email    ${DadosCad}[email]
-    #Fill Text       Permissão
+
 
     Get Text    id=name     inequal    ${EMPTY}
     Get Text    id=email    inequal    ${EMPTY}
@@ -98,18 +97,22 @@ Fill FiltroLojista
 Fill FiltroCliente
     [Arguments]    ${DadosCad}
 
-    Fill Text    id=name    ${DadosCad}[name]
-    Fill Text    id=cpf     ${DadosCad}[CPF]
-    #Fill Text       Permissão
+    Fill Text    id=name                                                                                               ${DadosCad}[name]
+    Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/div[1]/div/form/div[1]/div[2]/div/div[2]/div/div/input    ${DadosCad}[CPF]
+    Fill Text    id=email                                                                                              ${DadosCad}[email]
 
-    Get Text    id=name    inequal    ${EMPTY}
-    Get Text    id=cpf     inequal    ${EMPTY}
+
+    Get Text    id=name                                                                                               inequal    ${EMPTY}
+    Get Text    xpath=//*[@id="root"]/main/div/main/div/div/div[1]/div/form/div[1]/div[2]/div/div[2]/div/div/input    inequal    ${EMPTY}
+    Get Text    id=email                                                                                              inequal    ${EMPTY}
+
 Search Filtro
+    [Arguments]    ${DadosCad}
 
-    Click         text=Pesquisar
-    #VERIFICAR A COMPARAÇÂO
-    ${compare}    Set Variable      @
-    ${result}     Set Variable      xpath=/html/body/div[1]/main/div/main/div/div[2]/div[1]/div/div
+    Click    text=Pesquisar
+
+    ${compare}    Set Variable    ${DadosCad}[email]
+    ${result}     Set Variable    xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div
 
     Wait For Elements State    ${result}    visible     5
     Get Text                   ${result}    contains    ${compare}

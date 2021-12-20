@@ -10,12 +10,12 @@ Test Teardown    Finish Test
 Logar
     Login Admin
 
-Lista Vazia
-    [Tags]    ListavaziaLojista
+# Lista Vazia
+#     [Tags]    ListavaziaLojista
 
-    #Login Admin
-    Go To ListagemLojista
-    List Null Lojista
+#     #Login Admin
+#     Go To ListagemLojista
+#     List Null Lojista
 
 Lista com Dados
     [Tags]    ListaComDadosLojista
@@ -32,7 +32,7 @@ Lista com Filtro
     #Login Admin
     Go To ListagemLojista
     Fill FiltroLojista       ${DadosCad}
-    Search Filtro
+    Search Filtro            ${DadosCad}
 Redireciona Cadastro
     [Tags]    DirecionaCadastroLojista
 

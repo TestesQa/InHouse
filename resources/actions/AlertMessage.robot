@@ -26,18 +26,18 @@ Alert password Shold Be Required
 
 Alert Form Null
 
-    Wait For Elements State    text=Por favor, insira Nome/Razão social    visible       10
-    Wait For Elements State    text=Por favor, insira E-mail               visible       10
-    Wait For Elements State    text=Por favor, insira Telefone             visible       10
-    Wait For Elements State    text=CPF/CNPJ inválido                      visible       10
-    Wait For Elements State    text=Por favor, insira Nome Fantasia        visible       10
-    Wait For Elements State    text=Por favor, insira País                 visible       10
-    Wait For Elements State    text=Por favor, insira CEP                  visible       10
-    Wait For Elements State    text=Por favor, insira Logradouro           visible       10
-    Wait For Elements State    text=Por favor, insira Número               visible       10
-    Wait For Elements State    text=Por favor, insira bairro               visible       10
-    Wait For Elements State    text=Por favor, insira Cidade               visible       10
-    Wait For Elements State    text=Por favor, insira Estado               visible       10
+    Wait For Elements State    text=Por favor, insira Nome/Razão social    visible    10
+    Wait For Elements State    text=Por favor, insira E-mail               visible    10
+    Wait For Elements State    text=Por favor, insira Telefone             visible    10
+    Wait For Elements State    text=CPF/CNPJ inválido                      visible    10
+    Wait For Elements State    text=Por favor, insira Nome Fantasia        visible    10
+    Wait For Elements State    text=Por favor, insira País                 visible    10
+    Wait For Elements State    text=Por favor, insira CEP                  visible    10
+    Wait For Elements State    text=Por favor, insira Logradouro           visible    10
+    Wait For Elements State    text=Por favor, insira Número               visible    10
+    Wait For Elements State    text=Por favor, insira bairro               visible    10
+    Wait For Elements State    text=Por favor, insira Cidade               visible    10
+    Wait For Elements State    text=Por favor, insira Estado               visible    10
 
 Alert Erro
     ${element}                 Set Variable    css=.ant-message 
@@ -46,14 +46,12 @@ Alert Erro
 
 
 Alert CPF Incompleto
-    ${CPF}    Set Variable    css=input[error*="11 digitos"]
 
-    Wait For Elements State    ${CPF}    visible    10
+    Wait For Elements State    text=Por favor, informe um CPF válido    visible    10
 
 Alert Telefone Incompleto
-    ${CPF}    Set Variable    css=input[error*="11 digitos"]
 
-    Wait For Elements State    ${CPF}    visible    10
+    Wait For Elements State    text=Por favor, informe um telefone válido    visible    10
 
 Alert Email Shold Be
 
@@ -68,16 +66,16 @@ Alert Invalid Email Shold Be
     Wait For Elements State    text=E-mail não é um email válido    visible    10
 
 Alert Phone Shold Be
-   
-    Wait For Elements State    text=Por favor, insira Telefone   visible    10
+
+    Wait For Elements State    text=Por favor, insira Telefone    visible    10
 
 Alert Phone Invalid Shold Be
-   
+
     Wait For Elements State    text=Telefone deve possuir 11 caracteres    visible    10
 
 Alert Date Incomplet
-    ${Date}                    Set Variable    css=input[error*="8 digitos"]
-    Wait For Elements State    ${Date}         visible                          10
+
+    Wait For Elements State    text=A Data de nascimento requer 8 digitos    visible    10
 
 Alert Atualizado com sucesso
     ${atualiza}    Set Variable    css=.ant-message
@@ -88,5 +86,13 @@ Alert Atualizado com sucesso
 Alert Cadastro com sucesso
     ${Sucesso}    Set Variable    css=.ant-message
 
-    Wait For Elements State    ${Sucesso}    visible     5           Login error
-    Get Text                   ${Sucesso}    contains    sucesso!    
+    Wait For Elements State    ${Sucesso}    visible     5          Login error
+    Get Text                   ${Sucesso}    contains    sucesso    
+
+Alert Form Null Cliente
+
+    Wait For Elements State    text=Por favor, insira Nome Completo          visible    10
+    Wait For Elements State    text=Por favor, informe um CPF válido         visible    10
+    Wait For Elements State    text=Por favor, insira E-mail                 visible    10
+    Wait For Elements State    text=A Data de nascimento requer 8 digitos    visible    10
+    Wait For Elements State    text=Por favor, informe um telefone válido    visible    10

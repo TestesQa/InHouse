@@ -11,12 +11,12 @@ Test Teardown    Finish Test
 Logar
     Login Admin
 
-Lista Vazia
-    [Tags]    ListavaziaADM
+# Lista Vazia
+#     [Tags]    ListavaziaADM
 
-    #Login Admin
-    Go To ListagemAdm
-    List Null ADM
+#     Login Admin
+#     Go To ListagemAdm
+#     List Null ADM
 
 Lista com Dados
     [Tags]    ListaComDadosADM
@@ -33,7 +33,7 @@ Lista com Filtro
     #Login Admin
     Go To ListagemAdm
     Fill FiltroADM       ${DadosCad}
-    Search Filtro
+    Search Filtro        ${DadosCad}
 
 Redireciona Cadastro
     [Tags]    DirecionaCadastroADM
@@ -46,7 +46,7 @@ Limpa Filtro
     [Tags]         LimpaFiltroADM
     ${DadosCad}    Get DadosCad      PreencheFiltroADM
 
-    #Login Admin
+    Login Admin
     Go To ListagemAdm
     Fill FiltroADM       ${DadosCad}
     Clear Filtro

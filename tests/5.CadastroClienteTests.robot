@@ -14,10 +14,11 @@ Cadastro Cliente Sucesso
 
     [Tags]                 CadCliente
     ${DadosCad}            Get DadosCad    CadClienteCompleto
+    
     #Login Admin
     Go To CadCliente
     Submit Form Cliente    ${DadosCad}
-    #Validar Envio
+    Alert Cadastro com sucesso
 
 Cadastro Cliente Campos em branco
     [Tags]    CadcliVazio
@@ -25,7 +26,7 @@ Cadastro Cliente Campos em branco
     #Login Admin
     Go To CadCliente
     Click               text=Salvar
-    Alert Form Null
+    Alert Form Null Cliente
 
 Cadastros Cliente CPF Incompleto
     [Tags]    CadCliCPFIncompleto
@@ -35,7 +36,7 @@ Cadastros Cliente CPF Incompleto
     #Login Admin
     Go To CadCliente
     Submit Form Cliente     ${DadosCad}
-    Click                   xpath=/html/body/div[1]/main/div/main/form/footer/button[2]
+    Click                   text=Salvar
     Alert CPF Incompleto
 
 Cadastro Cliente Email Invalido
@@ -46,7 +47,7 @@ Cadastro Cliente Email Invalido
     #Login Admin
     Go To CadCliente
     Submit Form Cliente             ${DadosCad}
-    Click                           xpath=/html/body/div[1]/main/div/main/form/footer/button[2]
+    Click                           text=Salvar
     Alert Invalid Email Shold Be
 
 Cadastro Cliente Data Incompleta
@@ -57,7 +58,7 @@ Cadastro Cliente Data Incompleta
     #Login Admin
     Go To CadCliente
     Submit Form Cliente     ${DadosCad}
-    Click                   xpath=/html/body/div[1]/main/div/main/form/footer/button[2]
+    Click                   text=Salvar
     Alert Date Incomplet
 
 # Cadastro Cliente Data nascimento Invalido
@@ -70,5 +71,5 @@ Cadastros Cliente Telefone Incompleta
     #Login Admin
     Go To CadCliente
     Submit Form Cliente          ${DadosCad}
-    Click                        xpath=/html/body/div[1]/main/div/main/form/footer/button[2]
+    Click                        text=Salvar
     Alert Telefone Incompleto

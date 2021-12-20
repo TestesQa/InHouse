@@ -1,6 +1,6 @@
 {   
     "Adm1": {
-        "email": "emailteste10@teste.com"
+        "email": "emailteste11@teste.com"
         },
 
     "EmailBranco": {
@@ -12,29 +12,29 @@
     },
 
     "PermissaoBranco":{
-        "email":"email2@email.com"
+        "email":"email3@email.com"
     },
 
     "EmailInvalido":{
         "email": "emailinvalido@"
     },
     "CadLojista": {
-        "nome": "Loja4",
-        "email":"lojista4@email.com",
+        "nome": "Loja5",
+        "email":"lojista5@email.com",
         "phone":"43999999999",
-        "CPFCNPJ": "29451736000212",
-        "fantasia": "loja4",
+        "CPFCNPJ": "29454736000212",
+        "fantasia": "loja5",
         "cep": "72545-511",
         "logradouro":"Quadra SHIS QI 21 Conjunto",
         "numero":"12",
         "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLojistaCompleto": {
-        "nome": "Loja5",
-        "email":"lojista5@email.com",
+        "nome": "Loja6",
+        "email":"lojista6@email.com",
         "phone":"43999999999",
-        "CPFCNPJ": "29451036000112",
-        "fantasia": "loja5",
+        "CPFCNPJ": "29451036100112",
+        "fantasia": "loja6",
         "cep": "29055-055",
         "logradouro":"Quadra SHIS QI 21 Conjunto",
         "numero":"12",
@@ -90,9 +90,9 @@
         "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadClienteCompleto":{
-        "Name": "Jõao da Silva",
-        "CPF": "12345678901",
-        "Email": "joao@silva.com",
+        "Name": "Jõao da a",
+        "CPF": "12341678971",
+        "Email": "joao13@silva.com",
         "DataNasc": "18/11/1980",
         "Telefone": "43112345678"
     },
@@ -125,16 +125,17 @@
         "Telefone": "43112348"
     },
     "PreencheFiltroADM":{
-        "email":"test@email.com",
-        "permission":"Admin"
+        "email":"admin@email.com"
+
     },
     "PreencheFiltroLojista":{
-        "name":"lojistateste",
-        "email":"Emailteste@novo.com"
+        "name":"Joaquim",
+        "email":"shopmanager@email.com"
     },
     "PreencheFiltroCliente":{
-        "name":"Clientetestes",
-        "CPF":"12548784459"
+        "name":"Allef",
+        "CPF":"072.310.209-09",
+        "email":"allefoliveirasilva@gmail.com"
     }
 
 }
