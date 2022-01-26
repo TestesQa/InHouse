@@ -10,7 +10,7 @@ Test Teardown    Finish Test
 
 Fazer login
     [Tags]    loginsucesso
-    Login With                 shopmanager@email.com         12345678
+    Login With                 admin@email.com         12345678
     User Shold Be Logged In
     [Teardown]                 Take ScreenShot And Logout
 
@@ -30,19 +30,19 @@ Login em branco
 Senha incorreta
     [Tags]    Senhaincorreta
 
-    Login With             shopmanager@gmail.com                                            123
+    Login With             admin@email.com                                          123
     Alert Text Shold Be    Ocorreu um erro, verifique suas credenciais e tente novamente
 
 Email invalido
     [Tags]    EmailInvalido
 
-    Login With              shomanager@ssl    123
+    Login With             admin@ssl    123
     Alert login Shold Be
 
-# Recuperar Senha
-#Sem funcionalidade ainda
+Link Recuperar Senha
+    [Tags]    LinkRecuperaSenha
 
-#    [Tags]    Recuparasenha
-
-#    Login With    admin@email.com
-
+    Recupera Senha Link  admin@email.com
+    Alert Link Enviado
+    
+    

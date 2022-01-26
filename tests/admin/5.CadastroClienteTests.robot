@@ -61,8 +61,6 @@ Cadastro Cliente Data Incompleta
     Click                   text=Salvar
     Alert Date Incomplet
 
-# Cadastro Cliente Data nascimento Invalido
-
 Cadastros Cliente Telefone Incompleta
     [Tags]    CadCliFoneIncompleto
 

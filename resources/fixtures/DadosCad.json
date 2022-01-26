@@ -1,6 +1,6 @@
 {   
     "Adm1": {
-        "email": "emailteste11@teste.com"
+        "email": "emailteste12@teste.com"
         },
 
     "EmailBranco": {
@@ -12,29 +12,29 @@
     },
 
     "PermissaoBranco":{
-        "email":"email3@email.com"
+        "email":"email4@email.com"
     },
 
     "EmailInvalido":{
         "email": "emailinvalido@"
     },
     "CadLojista": {
-        "nome": "Loja5",
-        "email":"lojista5@email.com",
+        "nome": "Loja7",
+        "email":"lojista7@email.com",
         "phone":"43999999999",
-        "CPFCNPJ": "29454736000212",
-        "fantasia": "loja5",
+        "CPFCNPJ": "29455736000212",
+        "fantasia": "loja7",
         "cep": "72545-511",
         "logradouro":"Quadra SHIS QI 21 Conjunto",
         "numero":"12",
         "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadLojistaCompleto": {
-        "nome": "Loja6",
-        "email":"lojista6@email.com",
+        "nome": "Loja8",
+        "email":"lojista8@email.com",
         "phone":"43999999999",
-        "CPFCNPJ": "29451036100112",
-        "fantasia": "loja6",
+        "CPFCNPJ": "29453036100112",
+        "fantasia": "loja8",
         "cep": "29055-055",
         "logradouro":"Quadra SHIS QI 21 Conjunto",
         "numero":"12",
@@ -42,8 +42,8 @@
         "pix":"02145478850",
         "agencia":"12334",
         "conta":"123548",
-        "estadual":"1275454245",
-        "municipal":"193456789"
+        "estadual":"1275474245",
+        "municipal":"193466789"
     },
     "CadLogistaEmailInvalid":{
         "nome": "Loja4",
@@ -90,9 +90,9 @@
         "bairro":"Setor de Habitações Individuais Sul"
     },
     "CadClienteCompleto":{
-        "Name": "Jõao da a",
-        "CPF": "12341678971",
-        "Email": "joao13@silva.com",
+        "Name": "Jõao da alvo",
+        "CPF": "12341678970",
+        "Email": "joao15@silva.com",
         "DataNasc": "18/11/1980",
         "Telefone": "43112345678"
     },

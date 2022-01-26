@@ -63,7 +63,7 @@ Alert Permission Shold Be Required
 
 Alert Invalid Email Shold Be
 
-    Wait For Elements State    text=E-mail não é um email válido    visible    10
+    Wait For Elements State    text=E-mail não é um email válido   visible    10
 
 Alert Phone Shold Be
 
@@ -75,12 +75,12 @@ Alert Phone Invalid Shold Be
 
 Alert Date Incomplet
 
-    Wait For Elements State    text=A Data de nascimento requer 8 digitos    visible    10
+    Wait For Elements State    text=Por favor, informe uma data válida    visible    10
 
 Alert Atualizado com sucesso
     ${atualiza}    Set Variable    css=.ant-message
 
-    Wait For Elements State    ${atualiza}    visible     5             Login error
+    Wait For Elements State    ${atualiza}    visible     5             Atualização falhou
     Get Text                   ${atualiza}    contains    atualizado
 
 Alert Cadastro com sucesso
@@ -96,3 +96,9 @@ Alert Form Null Cliente
     Wait For Elements State    text=Por favor, insira E-mail                 visible    10
     Wait For Elements State    text=A Data de nascimento requer 8 digitos    visible    10
     Wait For Elements State    text=Por favor, informe um telefone válido    visible    10
+
+Alert Link Enviado
+    ${Link}    Set Variable    css=.ant-message
+
+    Wait For Elements State    ${Link}    visible     5          Erro Envio Link
+    Get Text                   ${Link}    contains    enviado com sucesso  

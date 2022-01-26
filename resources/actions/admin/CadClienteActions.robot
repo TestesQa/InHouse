@@ -19,12 +19,13 @@ Submit Form Cliente
     Fill Text    id=name                                                                            ${DadosCad}[Name]
     Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/form/div[2]/div[2]/div[1]/div/input    ${DadosCad}[CPF]
     Fill Text    id=email                                                                           ${DadosCad}[Email]
-    Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/form/div[4]/div[2]/div[1]/div/input    ${DadosCad}[DataNasc]
+    Click        id=dateBirth
+    Fill Text    id=dateBirth                                                                       ${DadosCad}[DataNasc]
     Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/form/div[5]/div[2]/div[1]/div/input    ${DadosCad}[Telefone]
 
-    Click       text=Salvar
+    Click    text=Salvar
 
-    
+
 
 
 

@@ -79,7 +79,7 @@ Delete Lojista
 
     ${delete}    Set Variable    css=.ant-message
 
-    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[4]/td[4]/div
+    Click                      xpath=//*[@id="root"]/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[5]/td[4]/div/a/span
     Click                      text=Excluir
     Wait For Elements State    css=.ant-modal-content    visible    5
     Click                      text=Confirmar
@@ -142,7 +142,7 @@ Visao Admin
 
     Click       xpath=//*[@id="root"]/main/div/main/header/div[1]/div/button
 
-    Click       xpath=//*[@id="root"]/main/div/main/header/div[2]
+    Click       text=Voltar para visão de Admin
     ${adm}      Set Variable        xpath=/html/body/div[3]/div/div/ul
     Get Text                   ${adm}    contains     Admin    
 
