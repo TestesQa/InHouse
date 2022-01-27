@@ -86,7 +86,7 @@ Alert Atualizado com sucesso
 Alert Cadastro com sucesso
     ${Sucesso}    Set Variable    css=.ant-message
 
-    Wait For Elements State    ${Sucesso}    visible     5          Login error
+    Wait For Elements State    ${Sucesso}    visible     5          Cadastro error
     Get Text                   ${Sucesso}    contains    sucesso    
 
 Alert Form Null Cliente

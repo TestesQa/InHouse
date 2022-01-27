@@ -1,0 +1,29 @@
+{
+    "LojaCompleta": {
+        "nome": "Loja nova criada",
+        "cep": "75704865",
+        "numero": "132",
+        "logo": "utfpr.png",
+        "telefone": "43999999999",
+        "descricao": "Texto para uma descrição"
+    },
+    
+    "FornecedorCompleto": {
+        "razaosocial": "Loja Automatica",
+        "nomemarca": "Nova Marca",
+        "cnpj": "62096349000126",
+        "cep": "86038547",
+        "numero": "123",
+        "estadual": "9190828368",
+        "email": "fornecedor@email.com",
+        "telefone": "43777777777"
+    },
+
+    "Categoria": {
+        "nomecategoria": "Nova Categoria"
+    },
+
+    "Categoria18+":{
+        "nomecategoria": "Categoria 18+"
+    }
+}

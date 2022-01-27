@@ -10,7 +10,7 @@ Test Teardown    Finish Test
 Atualizar dados Minha Conta
     [Tags]  AtualizarMinhaConta
 
-    Login With  shopmanager@email.com  12345678
+    Login Lojista
     Sleep   2
     Ir para Minha Conta
     Atualizar Dados Lojista

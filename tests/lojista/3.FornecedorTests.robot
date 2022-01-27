@@ -1,5 +1,5 @@
 *Settings*
-Documentation    Testes Dados cadastrais Lojista
+Documentation    Testes Loja
 
 Resource    ${EXECDIR}/resources/Base.robot
 
@@ -9,8 +9,11 @@ Test Teardown    Finish Test
 *Test Cases*
 Cadastra Fornecedor
     [Tags]  CadastraFornecedor
+    ${DadosLojista}     Get DadosLojista    FornecedorCompleto
 
-    Login With  shopmanager@email.com  12345678
-
+    Login Lojista
     Ir Para Fornecedor
+    Cadastrar Fornecedor Sucesso  ${DadosLojista}
+    Alert Cadastro com sucesso   
+
 

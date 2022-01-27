@@ -1,4 +1,10 @@
 *Settings*
-Documentation    Testes relacionados a função Anuncio
+Documentation    Testes Anuncio
 
-*Keywords*
+Resource    ${EXECDIR}/resources/Base.robot
+
+Suite Setup      Start Session
+Test Teardown    Finish Test
+
+*Test Cases*
+Criar Anuncio

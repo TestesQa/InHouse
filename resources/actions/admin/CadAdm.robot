@@ -18,7 +18,7 @@ Go To CadAdmin Form
 Submit CadastroAdm Form
     [Arguments]    ${DadosCad}
 
-    # ${promise} = Promise To Upload File ${EXECDIR}/resources/fixtures/thumbnails/${DadosCad}[IMAGEM]
+    # ${promise} = Promise To Upload File ${EXECDIR}/resources/fixtures/thumbnails/${DadosCad}[]
     # Click           \ #ID_DA_CLASSE
     # Wait For    ${promise}
 

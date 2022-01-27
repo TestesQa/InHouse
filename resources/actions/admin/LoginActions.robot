@@ -10,6 +10,11 @@ Login With
     Fill Text    id=password    ${pass}
     Click        text=Entrar
 
+Login Lojista
+    Fill Text   id=email        shopmanager@email.com
+    Fill Text   id=password     12345678
+    CLick       text=Entrar
+
 Do logout
     Click    xpath=//*[@id="root"]/main/div/main/header/div[2]/span
     Click    text=Sair
