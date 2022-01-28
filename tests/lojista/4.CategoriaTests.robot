@@ -26,4 +26,18 @@ Cadastro Categoria 18+
     Alert Cadastro com sucesso
 
 Alterar Categoria
+    [Tags]  AlterarCategoria
+    ${DadosLojista}     Get DadosLojista  AlterarCategoria
+
+    Login Lojista
+    Ir Para Categoria
+    Alterar Categoria       ${DadosLojista}
+    Alert Atualizado com sucesso
+
 Excluir Categoria
+    [Tags]  ExcluirCategoria
+
+    Login Lojista
+    Ir Para Categoria
+    Deletar Categoria
+    Alert Delete com sucesso

@@ -13,8 +13,7 @@ Cadastrar Loja
 
     Login Lojista
     Ir Para Cadastro de Loja
-    Cadastrar Loja  ${DadosLojista}
-
+    Cadastrar Loja  ${DadosLojista}  
     Adicionar Logo  ${DadosLojista}
     sleep       5
 

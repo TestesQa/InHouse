@@ -3,7 +3,7 @@
         "nome": "Loja nova criada",
         "cep": "75704865",
         "numero": "132",
-        "logo": "utfpr.png",
+        "imagem": "utfpr.png",
         "telefone": "43999999999",
         "descricao": "Texto para uma descrição"
     },
@@ -19,11 +19,65 @@
         "telefone": "43777777777"
     },
 
+    "FornecedorImport": {
+        "planilha": "Fornecedor.xlsx"
+    },
+
     "Categoria": {
         "nomecategoria": "Nova Categoria"
     },
 
+    "AlterarCategoria": {
+        "nomecategoria": "Nova Categoria",
+        "18+": "SIM"
+    },
+
     "Categoria18+":{
         "nomecategoria": "Categoria 18+"
+    },
+
+    "ProdutoCompleto":{
+        "nome": "Produto automatico",
+        "categoria": "Bebida",
+        "imagem": "produto.jpg",
+        "descricao": "produto valido",
+        "preco": "15.77",
+        "barras": "1234567891234",
+        "fornecedor": "fornecedor auto",
+        "ncm": "12345678",
+        "cest": "1234567",
+        "fiscal": "5102",
+        "multiplicador": "1"
+    },
+
+    "EditarProduto":{
+        "nome": "Alterado",
+        "categoria": "Frios",
+        "imagem": "produto.jpg",
+        "descricao": "produto valido",
+        "preco": "20.00",
+        "barras": "1234567891234",
+        "fornecedor": "fornecedor auto",
+        "ncm": "12345678",
+        "cest": "1234567",
+        "fiscal": "5102",
+        "multiplicador": "1"
+    },
+
+    "ProdutoSimples":{
+        "nome": "Produto Simples",
+        "categoria": "Frios"
+    },
+
+    "CriarAnuncio":{
+        "nome": "Um anuncio",
+        "descricao": "Novo Anuncio automatico",
+        "imagem": "Anuncio.jpg"
+    },
+
+    "AlterarAnuncio":{
+        "nome": "Alterado",
+        "descricao": "Alterado",
+        "imagem": "Anuncio.jpg"
     }
 }

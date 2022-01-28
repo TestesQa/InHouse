@@ -25,3 +25,22 @@ Cadastrar Categoria 18+
     Fill Text   id=name         ${DadosLojista}[nomecategoria]
     Click       id=isForLegalAge
     #Click      text=Salvar
+
+Alterar Categoria
+    [Arguments]     ${DadosLojista}
+
+    Click       xpath=//*[@id="root"]/main/div/main/div/div/div[5]/div/div/div/div/div/table/tbody/tr[4]/td[3]
+    Wait For Elements State     text=Editar Categoria
+
+    Fill Text   id=name     ${DadosLojista}[nomecategoria]
+    #Validar CheckBox
+
+Deletar Categoria
+
+    Click       xpath=//*[@id="root"]/main/div/main/div/div/div[5]/div/div/div/div/div/table/tbody/tr[4]/td[3]
+    Wait For Elements State     text=Editar Categoria
+
+    Click       text=Excluir
+    Wait For Elements State     text=Excluir Categoria
+    Click       text=Confirmar
+    

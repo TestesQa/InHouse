@@ -83,6 +83,12 @@ Alert Atualizado com sucesso
     Wait For Elements State    ${atualiza}    visible     5             Atualização falhou
     Get Text                   ${atualiza}    contains    atualizado
 
+Alert Delete com sucesso
+    ${Excluir}    Set Variable    css=.ant-message
+
+    Wait For Elements State    ${Excluir}    visible     5             delecao falhou
+    Get Text                   ${Excluir}    contains    deletado com sucesso
+
 Alert Cadastro com sucesso
     ${Sucesso}    Set Variable    css=.ant-message
 

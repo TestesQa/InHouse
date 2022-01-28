@@ -19,8 +19,8 @@ Resource    actions/lojista/MinhaContaActions.robot
 Resource    actions/lojista/LojasActions.robot
 Resource    actions/lojista/FornecedorActions.robot
 Resource    actions/lojista/CategoriaActions.robot
-# Resource    actions/lojista/ProdutoActions.robot
-# Resource    actions/lojista/AnuncioActions.robot
+Resource    actions/lojista/ProdutoActions.robot
+Resource    actions/lojista/AnuncioActions.robot
 # Resource    actions/lojista/TransferenciaActions.robot
 # Resource    actions/lojista/CompraActions.robot
 # Resource    actions/lojista/EstoqueActions.robot

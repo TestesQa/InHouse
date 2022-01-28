@@ -26,9 +26,16 @@ Cadastrar Loja
     Fill Text    id=description         ${DadosLojista}[descricao]
     
 Adicionar Logo
-    [Arguments]     ${DadosLojista}
+    [Arguments]     ${logo}
     
-    ${Logo}=Promise To Upload File  ${EXECDIR}/resources/fixtures/thumbnails/${DadosLojista}[logo]
-    Click         xpath=/html/body/div[1]/main/div/main/div/div/form/div[13]/div[2]/div[1]/div/span/div/div/span
-    Wait For        ${Logo}                                                                                                       
+    Upload File By Selector    css=input[type="file"]    ${EXECDIR}/resources/fixtures/thumbnails/${logo}[imagem]
+    Wait For Elements State     text=Edição de imagem
+    Click       text=Escolher
 
+Importar Arquivo
+    [Arguments]     ${Arquivo}
+
+    Click       text=Importar
+    Upload File By Selector    id=file    ${EXECDIR}/resources/fixtures/import/${Arquivo}[planilha]
+    Click       text=Próximo
+    #Click       text=Importar

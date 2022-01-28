@@ -16,4 +16,11 @@ Cadastra Fornecedor
     Cadastrar Fornecedor Sucesso  ${DadosLojista}
     Alert Cadastro com sucesso   
 
+Importar Fornecedores
+    [Tags]  ImportaFornecedor
+    ${DadosLojista}     Get DadosLojista  FornecedorImport
 
+    Login Lojista
+    Ir Para Fornecedor
+    Importar Arquivo  ${DadosLojista}
+    Alert Cadastro com sucesso
