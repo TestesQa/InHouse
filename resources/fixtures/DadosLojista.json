@@ -7,6 +7,15 @@
         "telefone": "43999999999",
         "descricao": "Texto para uma descrição"
     },
+
+    "AtualizarLoja": {
+        "nome": "Loja nova atualizada",
+        "cep": "75704865",
+        "numero": "132",
+        "imagem": "utfpr.png",
+        "telefone": "43999999999",
+        "descricao": "Atualizou"
+    },
     
     "FornecedorCompleto": {
         "razaosocial": "Loja Automatica",

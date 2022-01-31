@@ -24,7 +24,33 @@ Cadastrar Loja
     Click        xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div/span[2]
     Click        text=Loja com estoque físico
     Fill Text    id=description         ${DadosLojista}[descricao]
-    
+    Adicionar Logo  ${DadosLojista}
+
+Gerenciar Loja
+
+    Click                      text=Loja
+    Click                      text=Gerenciar Lojas
+    Wait For Elements State    text=Loja               visible    5
+    Click                      xpath=/html/body/div/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[6]/div
+    Wait For Elements State    text=Dados Cadastrais
+
+Atualizar Dados Loja
+    [Arguments]     ${DadosLojista}
+
+    Click       text=Editar
+
+    Fill Text    id=name                                                                                                               ${DadosLojista}[nome]
+    Fill Text    xpath=/html/body/div/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[4]/div[2]/div/div/input    ${DadosLojista}[cep]
+    Fill Text    id=address_number                                                                                                     ${DadosLojista}[numero]
+    Click        text=Dados Opcionais
+    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[1]/div[2]/div/div/div
+    Click        xpath=/html/body/div[3]/div/div/div/div[2]/div[1]/div/div/div[1]/div
+    Fill Text    xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[2]/div[2]/div/div/input              ${DadosLojista}[telefone]
+    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div
+    Click        text=Estoque virtual
+    Fill Text    id=description         ${DadosLojista}[descricao]
+    Adicionar Logo  ${DadosLojista}
+
 Adicionar Logo
     [Arguments]     ${logo}
     

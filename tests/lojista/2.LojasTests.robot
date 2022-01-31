@@ -14,8 +14,44 @@ Cadastrar Loja
     Login Lojista
     Ir Para Cadastro de Loja
     Cadastrar Loja  ${DadosLojista}  
-    Adicionar Logo  ${DadosLojista}
     sleep       5
+    Alert Cadastro com sucesso
+
+#GERENCIAR LOJA
+Atualizar Dados Loja
+    [Tags]  AtualizarLoja
+    ${DadosLojista}     Get DadosLojista  AtualizarLoja
+
+    Login Lojista
+    Gerenciar Loja
+    Atualizar Dados Loja    ${DadosLojista}
 
 
-   # Alert Cadastro com sucesso
+#Planograma
+Criar Planograma
+Importar Planograma
+Editar Planograma
+
+#Transfencia
+Criar Transferencia
+Criar PickList
+Excluir Transferencia
+Atualizar Transferencia
+Executar Transferencia
+
+#Estoque
+Atualizar Estoque
+
+#Compras
+Cadastrar Compra
+Importar Compra
+Importar Compra XML
+Alterar Compra
+Excluir Compra
+
+#Vendas
+
+
+
+
+
