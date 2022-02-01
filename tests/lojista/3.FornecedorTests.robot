@@ -24,3 +24,20 @@ Importar Fornecedores
     Ir Para Fornecedor
     Importar Arquivo  ${DadosLojista}
     Alert Cadastro com sucesso
+
+Alterar Fornecedor
+    [Tags]  AlterarFornecedor
+    ${DadosLojista}     Get DadosLojista  AlterarFornecedor
+
+    Login Lojista
+    Ir Para Fornecedor
+    Alterar Fornecedor      ${DadosLojista}
+    Alert Atualizado com sucesso
+
+Deletar Fornecedor
+    [Tags]  DeletarFornecedor
+
+    Login Lojista
+    Ir Para Fornecedor
+    Deletar Fornecedor
+    #Alert Delete com sucesso

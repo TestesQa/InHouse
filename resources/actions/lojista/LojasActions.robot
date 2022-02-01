@@ -14,54 +14,78 @@ Cadastrar Loja
     CLick                      text=Cadastrar
     Wait For Elements State    text=Cadastrar Loja
 
-    Fill Text    id=name                                                                                                               ${DadosLojista}[nome]
-    Fill Text    xpath=//*[@id="root"]/main/div/main/div/div/form/div[4]/div[2]/div/div/input                                          ${DadosLojista}[cep]
-    Fill Text    id=address_number                                                                                                     ${DadosLojista}[numero]
-    Click        text=Dados Opcionais
-    Click        xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[1]/div[2]/div/div/div/div/span[2]
-    Click        xpath=/html/body/div[2]/div/div/div/div[2]/div[1]/div/div/div[1]/div
-    Fill Text    xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[2]/div[2]/div/div/input              ${DadosLojista}[telefone]
-    Click        xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div/span[2]
-    Click        text=Loja com estoque físico
-    Fill Text    id=description         ${DadosLojista}[descricao]
-    Adicionar Logo  ${DadosLojista}
+    Fill Text         id=name                                                                                                               ${DadosLojista}[nome]
+    Fill Text         xpath=//*[@id="root"]/main/div/main/div/div/form/div[4]/div[2]/div/div/input                                          ${DadosLojista}[cep]
+    Fill Text         id=address_number                                                                                                     ${DadosLojista}[numero]
+    Click             text=Dados Opcionais
+    Click             xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[1]/div[2]/div/div/div/div/span[2]
+    Click             xpath=/html/body/div[2]/div/div/div/div[2]/div[1]/div/div/div[1]/div
+    Fill Text         xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[2]/div[2]/div/div/input              ${DadosLojista}[telefone]
+    Click             xpath=/html/body/div[1]/main/div/main/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div/span[2]
+    Click             text=Loja com estoque físico
+    Fill Text         id=description                                                                                                        ${DadosLojista}[descricao]
+    Adicionar Logo    ${DadosLojista}
 
 Gerenciar Loja
 
     Click                      text=Loja
     Click                      text=Gerenciar Lojas
-    Wait For Elements State    text=Loja               visible    5
+    Wait For Elements State    text=Loja                                                                                            visible    5
     Click                      xpath=/html/body/div/main/div/main/div/div/div[4]/div/div/div/div/div/table/tbody/tr[1]/td[6]/div
     Wait For Elements State    text=Dados Cadastrais
 
 Atualizar Dados Loja
-    [Arguments]     ${DadosLojista}
+    [Arguments]    ${DadosLojista}
 
-    Click       text=Editar
+    Click    text=Editar
 
-    Fill Text    id=name                                                                                                               ${DadosLojista}[nome]
-    Fill Text    xpath=/html/body/div/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[4]/div[2]/div/div/input    ${DadosLojista}[cep]
-    Fill Text    id=address_number                                                                                                     ${DadosLojista}[numero]
-    Click        text=Dados Opcionais
-    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[1]/div[2]/div/div/div
-    Click        xpath=/html/body/div[3]/div/div/div/div[2]/div[1]/div/div/div[1]/div
-    Fill Text    xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[2]/div[2]/div/div/input              ${DadosLojista}[telefone]
-    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div
-    Click        text=Estoque virtual
-    Fill Text    id=description         ${DadosLojista}[descricao]
-    Adicionar Logo  ${DadosLojista}
+    Fill Text         id=name                                                                                                                                     ${DadosLojista}[nome]
+    Fill Text         xpath=/html/body/div/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[4]/div[2]/div/div/input                                   ${DadosLojista}[cep]
+    Fill Text         id=address_number                                                                                                                           ${DadosLojista}[numero]
+    Click             text=Dados Opcionais
+    Click             xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[1]/div[2]/div/div/div
+    Click             xpath=/html/body/div[3]/div/div/div/div[2]/div[1]/div/div/div[1]/div
+    Fill Text         xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[2]/div[2]/div/div/input      ${DadosLojista}[telefone]
+    Click             xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[1]/div/div/form/div[15]/div[1]/div[2]/div/div[3]/div[2]/div/div/div/div
+    Click             text=Estoque virtual
+    Fill Text         id=description                                                                                                                              ${DadosLojista}[descricao]
+    Adicionar Logo    ${DadosLojista}
 
 Adicionar Logo
-    [Arguments]     ${logo}
-    
+    [Arguments]    ${logo}
+
     Upload File By Selector    css=input[type="file"]    ${EXECDIR}/resources/fixtures/thumbnails/${logo}[imagem]
-    Wait For Elements State     text=Edição de imagem
-    Click       text=Escolher
+    Wait For Elements State    text=Edição de imagem
+    Click                      text=Escolher
 
 Importar Arquivo
-    [Arguments]     ${Arquivo}
+    [Arguments]    ${Arquivo}
 
-    Click       text=Importar
-    Upload File By Selector    id=file    ${EXECDIR}/resources/fixtures/import/${Arquivo}[planilha]
-    Click       text=Próximo
+    Click                      text=Importar
+    Upload File By Selector    id=file          ${EXECDIR}/resources/fixtures/import/${Arquivo}[planilha]
+    Click                      text=Próximo
     #Click       text=Importar
+
+Criar Planograma
+    [Arguments]    ${Planograma}
+
+    CLick                      text=Planograma
+    Click                      text=Editar
+    Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[2]/div[3]/div/button
+    Wait For Elements State    xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[2]/div[5]/div[2]/div/div[2]
+
+    Fill Text    id=product_name                                                                                                                          ${Planograma}[nome]
+    Wait For Elements State     text=Batata Frita       visible     5
+    Click           text=Batata Frita
+    Fill Text    id=planogram_code                                                                                                                         ${Planograma}[codigo]
+    Fill Text    id=standard_amount                                                                                                                        ${Planograma}[quantidade]
+    Fill Text    id=alert_level                                                                                                                            ${Planograma}[alerta]
+    Fill Text    id=price_list_in_cents                                                                                                                    ${Planograma}[precolista]
+    Fill Text    id=price_final_in_cents                                                                                                                   ${Planograma}[precofinal]
+    Fill Text    id=stock_amount                                                                                                                           ${Planograma}[estoque]
+
+    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[2]/div[5]/div[2]/div/div[2]/div[3]/button[2]
+    Sleep       5
+    #Wait For Elements State     text=Voltar
+    #CLick        text=Salvar
+

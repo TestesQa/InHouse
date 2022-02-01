@@ -28,6 +28,17 @@
         "telefone": "43777777777"
     },
 
+    "AlterarFornecedor": {
+        "razaosocial": "Alterado",
+        "nomemarca": "Alterado",
+        "cnpj": "62096349000126",
+        "cep": "86038547",
+        "numero": "123",
+        "estadual": "9190828368",
+        "email": "fornecedor@email.com",
+        "telefone": "43777777777"
+    },
+
     "FornecedorImport": {
         "planilha": "Fornecedor.xlsx"
     },
@@ -88,5 +99,16 @@
         "nome": "Alterado",
         "descricao": "Alterado",
         "imagem": "Anuncio.jpg"
+    },
+
+    "Planograma":{
+        "nome": "Batata",
+        "codigo": "A",
+        "status": "Desbloqueado",
+        "quantidade": "10",
+        "alerta": "2",
+        "precolista": "2.50",
+        "precofinal": "5.00",
+        "estoque": "5"
     }
 }

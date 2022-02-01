@@ -25,10 +25,19 @@ Atualizar Dados Loja
     Login Lojista
     Gerenciar Loja
     Atualizar Dados Loja    ${DadosLojista}
+    Alert Atualizado com sucesso
 
 
 #Planograma
 Criar Planograma
+    [Tags]  CriarPlanograma
+    ${DadosLojista}     Get DadosLojista  Planograma
+
+    Login Lojista
+    Gerenciar Loja
+    Criar Planograma        ${DadosLojista}
+    
+
 Importar Planograma
 Editar Planograma
 
