@@ -36,13 +36,53 @@ Criar Planograma
     Login Lojista
     Gerenciar Loja
     Criar Planograma        ${DadosLojista}
-    
+    Alert Cadastro com sucesso    
 
 Importar Planograma
+    [Tags]  ImportarPlanograma
+    ${DadosLojista}     Get DadosLojista  ImportarPlanograma
+
+    Login Lojista
+    Gerenciar Loja
+    Importar Planograma     ${DadosLojista}
+
+
 Editar Planograma
+    [Tags]  EditarPlanograma
+    ${DadosLojista}     Get DadosLojista  EditarPlanograma
+
+    Login Lojista
+    Gerenciar Loja
+    Editar Planograma       ${DadosLojista}
+    Alert Atualizado com sucesso
+
+Excluir Produto Planograma
+    [Tags]  ExcluirPlanograma
+
+    Login Lojista
+    Gerenciar Loja
+    Excluir Planograma
+    Alert Delete com sucesso
 
 #Transfencia
-Criar Transferencia
+Criar Transferencia Manual
+    [Tags]  CriarTransferenciaManual
+    ${DadosLojista}     Get DadosLojista  transferenciaManual
+
+    Login Lojista
+    Gerenciar Loja
+    Ir Para Transferencia
+    Criar Transferencia Manual  ${DadosLojista}
+    
+Importar Transferencia
+    [Tags]  ImportarTransferencia
+    ${DadosLojista}     Get DadosLojista  importarTransferencia
+
+    Login Lojista
+    Gerenciar Loja
+    Ir Para Transferencia
+    Importar Transferencia  ${DadosLojista}
+
 Criar PickList
 Excluir Transferencia
 Atualizar Transferencia

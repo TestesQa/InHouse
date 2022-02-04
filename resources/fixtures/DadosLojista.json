@@ -110,5 +110,29 @@
         "precolista": "2.50",
         "precofinal": "5.00",
         "estoque": "5"
+    },
+
+    "ImportarPlanograma":{
+        "planilha": "Planograma.xlsx"
+    },
+
+    "EditarPlanograma":{
+        "qtsPadrao": "12",
+        "alerta": "5",
+        "precofinal": "6.50"
+    },
+
+    "transferenciaManual":{
+        "origem": "Testes loja",
+        "descricao": "tranferencia Manual",
+        "produto": "Agua de Coco",
+        "qtsTransfere": "5"
+    },
+
+    "importarTransferencia":{
+        "origem": "",
+        "descricao": "tranferencia Importada",
+        "planilha": "Transferencia.xlsx"
     }
+
 }
