@@ -127,54 +127,67 @@ Criar Transferencia Manual
     Click                      text=Criar Transferência
     Wait For Elements State    text=Criar Transferência
 
-    IF                         "${transfere}[origem]" == "${EMPTY}"
-        Fill Text               id=description   ${transfere}{descricao}
-        Click       xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[4]/div/button
-        Fill Text   id=procut_name            agua
-        Click       text=${transfere}[produto]
-        Fill Text   id=amount_to_transfer       ${transfere}[qtsTransfere]
-        Click       xpath=/html/body/div[2]/div/div[2]/div/div[2]/div[3]/button[2]
-        Sleep   5
+    IF           "${transfere}[origem]" == "${EMPTY}"
+    Fill Text    id=description                                                              ${transfere}{descricao}
+    Click        xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[4]/div/button
+    Fill Text    id=procut_name                                                              agua
+    Click        text=${transfere}[produto]
+    Fill Text    id=amount_to_transfer                                                       ${transfere}[qtsTransfere]
+    Click        xpath=/html/body/div[2]/div/div[2]/div/div[2]/div[3]/button[2]
+    Sleep        5
 
     ELSE
-        Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[1]/div/div[1]/div[2]/div/div/div/button
-        Click                      text=OK
-        Wait For Elements State    text=Adicionar Estoque de origem
-        Fill Text                  id=storeDestination      Testes
-        Click                      text=${transfere}[origem]
-        Click                      xpath=/html/body/div[3]/div/div[2]/div/div[2]/div[3]/button[2]
-        Fill Text   id=description   ${transfere}[descricao]
-        Click       xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[4]/div/button
-        Fill Text   id=procut_name            Agua
-        Click       text=${transfere}[produto]
-        Fill Text   id=amount_to_transfer       ${transfere}[qtsTransfere]
-        Click       css=.ant-modal-footer
-        Click       xpath=/html/body/div[2]/div/div[2]/div/div[2]/div[3]/button[2]
-        Sleep       5
+    Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[1]/div/div[1]/div[2]/div/div/div/button
+    Click                      text=OK
+    Wait For Elements State    text=Adicionar Estoque de origem
+    Fill Text                  id=storeDestination                                                                                   Testes
+    Click                      text=${transfere}[origem]
+    Click                      xpath=/html/body/div[3]/div/div[2]/div/div[2]/div[3]/button[2]
+    Fill Text                  id=description                                                                                        ${transfere}[descricao]
+    Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[4]/div/button
+    Fill Text                  id=procut_name                                                                                        Agua
+    Click                      text=${transfere}[produto]
+    Fill Text                  id=amount_to_transfer                                                                                 ${transfere}[qtsTransfere]
+    Click                      css=.ant-modal-footer
+    Click                      xpath=/html/body/div[2]/div/div[2]/div/div[2]/div[3]/button[2]
+    Sleep                      5
     END
 
 Importar Transferencia
-    [Arguments]     ${Importar}
+    [Arguments]    ${Importar}
 
     Click                      text=Criar Transferência
     Wait For Elements State    text=Criar Transferência
 
-    IF                         "${Importar}[origem]" == "${EMPTY}"
-        Fill Text               id=description   ${Importar}[descricao]
-        Importar Arquivo  ${Importar}
-        Click   text=Próximo
-        Click   xpath=/html/body/div[7]/div/div[2]/div/div[2]/div[3]/button[2]
-        
+    IF                  "${Importar}[origem]" == "${EMPTY}"
+    Fill Text           id=description                                                    ${Importar}[descricao]
+    Importar Arquivo    ${Importar}
+    Click               text=Próximo
+    Click               xpath=/html/body/div[7]/div/div[2]/div/div[2]/div[3]/button[2]
+
 
     ELSE
-        Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[1]/div/div[1]/div[2]/div/div/div/button
-        Click                      text=OK
-        Wait For Elements State    text=Adicionar Estoque de origem
-        Fill Text                  id=storeDestination      Testes
-        Click                      text=${Importar}[origem]
-        Click                      xpath=/html/body/div[3]/div/div[2]/div/div[2]/div[3]/button[2]
-        Fill Text   id=description   ${Importar}[descricao]
-        Importar Arquivo  ${Importar}
-        Click   text=Próximo
-        Click   xpath=/html/body/div[7]/div/div[2]/div/div[2]/div[3]/button[2]
+    Click                      xpath=/html/body/div[1]/main/div/main/div/div/div/form/div[1]/div/div[1]/div[2]/div/div/div/button
+    Click                      text=OK
+    Wait For Elements State    text=Adicionar Estoque de origem
+    Fill Text                  id=storeDestination                                                                                   Testes
+    Click                      text=${Importar}[origem]
+    Click                      xpath=/html/body/div[3]/div/div[2]/div/div[2]/div[3]/button[2]
+    Fill Text                  id=description                                                                                        ${Importar}[descricao]
+    Importar Arquivo           ${Importar}
+    Click                      text=Próximo
+    Click                      xpath=/html/body/div[7]/div/div[2]/div/div[2]/div[3]/button[2]
     END
+
+
+Criar PickList
+
+    Click                      text=Criar Picklist
+    Wait For Elements State    text= Criar Picklist    visible    5
+    Wait For Elements State    xpath=/html/body/div[1]/main/div/main/main/div/div/form/div[3]/div/div/div/div/div/table/tbody          visible    5
+    Sleep       1    
+    #Click                      text=Salvar
+
+Deletar Transfencia
+
+    Click       xpath=/html/body/div[1]/main/div/main/div/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[7]/button

@@ -84,7 +84,16 @@ Importar Transferencia
     Importar Transferencia  ${DadosLojista}
 
 Criar PickList
+    [Tags]  CriarPickList
+
+    Login Lojista
+    Gerenciar Loja
+    Ir Para Transferencia
+    Criar PickList
+    Alert Cadastro com sucesso
+
 Excluir Transferencia
+    [Tags]
 Atualizar Transferencia
 Executar Transferencia
 
